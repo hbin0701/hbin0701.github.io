@@ -69,6 +69,8 @@ body {
 
 
 .header {
+    margin-top: 20px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -85,9 +87,9 @@ body {
 }
 
 .image img {
-    padding-left: 30px;
-    max-height: 100px;
-    max-width: 100px;
+    /*     padding-left: 30px; */
+    max-height: 250px;
+    max-width: 250px;
     border-radius: 50%;
 }
 
