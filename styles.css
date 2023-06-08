@@ -99,7 +99,7 @@ h1 {
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 10px;
 }
 
@@ -129,6 +129,7 @@ p {
 }
 
 .left-section {
+    margin-top: 0px;
     width: 80%;
 }
 
@@ -184,4 +185,12 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.last {
+    margin-top: -20px;
+}
+
+.second {
+    margin-top: -10px;
 }
