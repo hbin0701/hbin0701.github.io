@@ -1,196 +1,134 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700;800&family=Noto+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700;800&family=Noto+Sans:wght@800&family=Nunito:wght@500&family=Ubuntu:wght@500&display=swap');
 
 * {
-    font-family: 'Lato', sans-serif !important;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
 }
 
 body {
-    margin: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: #f5f5f5;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    margin-left: 100px;
-    margin-right: 100px;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.intro {
-    font-size: 18px !important;
-    width: 90%;
-}
-
-.about {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 30px;
-}
-
-.about-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.about .section-title {
-    font-weight: bold;
+    background-color: #eaecef;
     color: #333333;
-    margin-bottom: 20px;
-}
-
-.about .divider {
-    width: 76px;
-    height: 4px;
-    background-color: #333333;
-    margin-top: 0px;
-}
-
-/* Example styles for the content within the About card */
-.about p {
-    font-size: 16px;
-    color: #555555;
-    margin-bottom: 10px;
-}
-
-.about a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.about a:hover {
-    text-decoration: underline;
-}
-
-
-
-.header {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.info {
-    padding: 50px;
-    display: inline-block;
-    text-align: left;
-    vertical-align: middle;
-}
-
-.image {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.image img {
-    /*     padding-left: 30px; */
-    max-height: 250px;
-    max-width: 250px;
-    border-radius: 50%;
-}
-
-h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 p {
-    margin: 0;
+    line-height: 1.5
+}
+
+a {
+    font-family: 'Nunito', sans-serif;
+}
+
+.highlight {
+    color: var(--secondary-color);
+    /* Replace with your actual secondary color */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.info h1 {
+    font-size: 28px;
+    color: #2a2a2a;
 }
 
 .section {
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.);
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    padding: 10px 30px;
-    margin: 20px;
-    width: 85%;
-    margin-top: 40px;
-}
-
-.section-title {
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #555;
+    padding: 20px 22px 8px 20px;
+    margin-bottom: 20px;
 }
 
 .subsection {
     display: flex;
-    margin-bottom: 15px;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 13px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
 }
 
-.left-section {
-    margin-top: 0px;
-    width: 80%;
-}
 
-.right-section {
-    align-content: right;
-    padding-top: 30px;
+
+.subsection:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
 }
 
 .subsection-title {
-    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    color: #333;
     margin-bottom: 10px;
 }
 
-.divider {
-    border: none;
-    border-top: 1px solid #ccc;
-    margin: 20px 0;
-    margin-right: 32px;
-}
-
-
-.major {
-    font-size: 16px;
-    padding: 0 0px;
-}
-
-.minor {
+.minor,
+.date {
     font-size: 14px;
-    padding-top: 5px;
-    font-weight: bold;
+    color: #666;
 }
 
 .date {
+    text-align: right;
     font-style: italic;
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .subsection {
+        flex-direction: column;
+    }
+
+    .date {
+        text-align: left;
+        margin-top: 10px;
+    }
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
     color: #888;
 }
 
-.date_pub {
-    margin-left: 20px;
-    font-style: italic;
-    color: #888;
+:root {
+    --primary-color: #333333;
+    /* Current primary color */
+    --secondary-color: #4a90e2;
+    /* New secondary color */
 }
 
-ul {
-    padding-left: 20px;
+a,
+.section-title {
+    color: var(--secondary-color);
 }
 
-/* Styling for links */
-a {
-    color: #007bff;
+.social-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+    /* Adjust as needed */
+}
+
+.social-links a {
+    margin: 0 10px;
+    /* Adjust spacing between links */
     text-decoration: none;
+    color: var(--primary-color);
+    /* Use your primary color */
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-.last {
-    margin-top: -20px;
-}
-
-.second {
-    margin-top: -10px;
+.social-links a:hover {
+    color: var(--secondary-color);
+    /* Optional: change color on hover */
 }
