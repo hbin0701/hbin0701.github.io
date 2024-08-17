@@ -1,216 +1,254 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyeonbin Hwang</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="info">
-            <h2>Hi. I am</h2>
-            <h1>Hyeonbin.</h1>
-            <h4>M.S. student @ KAIST AI </h4>
-            <h4>Reasoning & Self-Training of LLMs</h4>
-            <p>Email: hb@kaist.ac.kr <br />
-                - Seoul, Republic of Korea</p>
-        </div>
-        <div class="websites">
-            <div class="website-row">
-                <!-- Github -->
-                <a href="https://github.com/hbin0701" class="no-underline" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24">
+    <nav class="navbar">
+        <ul class="nav-items">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#music">Music</a></li>
+        </ul>
+    </nav>
+
+    <div class="intro">
+        <div class="intro-text">
+            <h3>안녕하세요!</h3>
+            <h1>I'm <span class="highlight">Hyeonbin</span> ദ്ദി・ᴗ・)✧ </h1>
+            <h2>#NLProc</h2>
+            <ul class="contact-info">
+                <li>Email: <a href="mailto:hb@kaist.ac.kr">hb@kaist.ac.kr</a></li>
+                <li>Location: Seoul, South Korea</li>
+            </ul>
+            <div class="social-media">
+                <a href="https://github.com/hbin0701" class="social-media-item" target="_blank" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path
                             d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.230 3.297-1.230.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                     </svg>
-                    <div>Github</div>
                 </a>
-                <!-- Google Scholar -->
-                <a href="https://scholar.google.com/citations?user=RoEV6T0AAAAJ" class="no-underline" target="_blank">
+                <a href="https://scholar.google.com/citations?user=RoEV6T0AAAAJ" class="social-media-item"
+                    target="_blank" aria-label="Google Scholar">
                     <svg xmlns="http://www.w3.org/2000/svg" aria-label="Google Scholar" role="img" viewBox="0 0 512 512"
-                        width="18" height="18">
+                        width="24" height="24">
                         <rect width="512" height="512" fill="#4285f4" />
                         <path fill="#ffffff"
                             d="M213 111l-107 94h69c5 45 41 64 78 67-7 18-4 27 7 39-43 1-103 26-103 67 4 45 63 54 92 54 38 1 81-19 90-54 4-35-10-54-31-71-23-18-28-28-21-40 15-17 35-27 39-51 2-17-2-28-6-43l45-38-1 16c-3 2-5 6-5 9v103c2 13 22 11 23 0V160c0-3-2-7-5-8v-25l16-16zm58 141c-61 10-87-87-38-99 56-11 83 86 38 99zm-5 73c60 13 61 63 10 78-44 9-82-4-81-30 0-25 35-48 71-48z" />
                     </svg>
-                    <div>Google Scholar</div>
+                </a>
+                <a href="https://www.linkedin.com/in/hyeonbin-hwang-1b8a9222b/" class="no-underline" target="_blank">
+                    <svg height="24" , width="24" , viewBox="0 0 72 72" , xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" fill-rule="evenodd">
+                            <path
+                                d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z"
+                                fill="#007EBB" />
+                            <path
+                                d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z"
+                                fill="#FFF" />
+                        </g>
+                    </svg>
                 </a>
             </div>
-            <div class="website-row">
-                <a href="https://x.com/ronalhwang" class="no-underline" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 30 30">
-                        <path
-                            d="M 6 4 C 4.895 4 4 4.895 4 6 L 4 24 C 4 25.105 4.895 26 6 26 L 24 26 C 25.105 26 26 25.105 26 24 L 26 6 C 26 4.895 25.105 4 24 4 L 6 4 z M 8.6484375 9 L 13.259766 9 L 15.951172 12.847656 L 19.28125 9 L 20.732422 9 L 16.603516 13.78125 L 21.654297 21 L 17.042969 21 L 14.056641 16.730469 L 10.369141 21 L 8.8945312 21 L 13.400391 15.794922 L 8.6484375 9 z M 10.878906 10.183594 L 17.632812 19.810547 L 19.421875 19.810547 L 12.666016 10.183594 L 10.878906 10.183594 z">
-                        </path>
-                    </svg>
-                    <div>Twitter</div>
-
-                    <a href="https://www.youtube.com/@ronalhwang" class="no-underline" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 64 64">
-                            <path
-                                d="M62.603 16.596a8.06 8.06 0 0 0-5.669-5.669C51.964 9.57 31.96 9.57 31.96 9.57s-20.005.04-24.976 1.397a8.06 8.06 0 0 0-5.669 5.669C0 21.607 0 32 0 32s0 10.393 1.356 15.404a8.06 8.06 0 0 0 5.669 5.669C11.995 54.43 32 54.43 32 54.43s20.005 0 24.976-1.356a8.06 8.06 0 0 0 5.669-5.669C64 42.434 64 32 64 32s-.04-10.393-1.397-15.404z"
-                                fill="red" />
-                            <path d="M25.592 41.612L42.187 32l-16.596-9.612z" fill="#fff" />
-                        </svg>
-                        <div>Youtube</div>
-                    </a>
-
-
-                    <a href="https://www.linkedin.com/in/hyeonbin-hwang-1b8a9222b/" class="no-underline"
-                        target="_blank">
-                        <svg height="18" , width="18" , viewBox="0 0 72 72" width="72"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g fill="none" fill-rule="evenodd">
-                                <path
-                                    d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z"
-                                    fill="#007EBB" />
-                                <path
-                                    d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z"
-                                    fill="#FFF" />
-                            </g>
-                        </svg>
-                        <div>LinkedIn</div>
-                    </a>
-
-            </div>
         </div>
-        <div class="image">
-            <img src="./IMG_2070.JPG" alt="my-photo" border="0">
+
+        <div class="profile-picture">
+            <img src="./IMG_5418.jpg" alt="Hyeonbin">
         </div>
     </div>
 
-    <div class="section about" id="about-card">
-        <div class="about-content">
-            <h2 class="section-title">About</h2>
-            <hr class="divider" />
-            <p class="intro">
-            <div class="verse">
-                Hyeonbin [/hjʌn.bin/] <br />
-                𝙏𝙝𝙤𝙨𝙚 𝙬𝙝𝙤 𝙖𝙧𝙚 𝙬𝙞𝙨𝙚 𝙬𝙞𝙡𝙡 𝙨𝙝𝙞𝙣𝙚 𝙡𝙞𝙠𝙚 𝙩𝙝𝙚 𝙗𝙧𝙞𝙜𝙝𝙩𝙣𝙚𝙨𝙨
-                𝙤𝙛 𝙩𝙝𝙚
-                𝙝𝙚𝙖𝙫𝙚𝙣𝙨, 𝙖𝙣𝙙 𝙩𝙝𝙤𝙨𝙚 𝙬𝙝𝙤 𝙡𝙚𝙖𝙙 𝙢𝙖𝙣𝙮 𝙩𝙤 𝙧𝙞𝙜𝙝𝙩𝙚𝙤𝙪𝙨𝙣𝙚𝙨𝙨,
-                𝙡𝙞𝙠𝙚 𝙩𝙝𝙚 𝙨𝙩𝙖𝙧𝙨 𝙛𝙤𝙧 𝙚𝙫𝙚𝙧 𝙖𝙣𝙙 𝙚𝙫𝙚𝙧. <br />
-                <div class="verse_ch"> - ᴅᴀɴɪᴇʟ 12:3 <br /> </div>
+    <div id="about" class="about-container">
+        <div class="about hidden">
+            <div class="about-img">
+                <img src="./piano_soccer.jpg" alt="Piano_soccer" class="img-default">
+                <img src="./IMG_2070.jpg" alt="IMG_1547" class="img-hover">
             </div>
 
-            <div class="content">
-                Hello, thanks for visiting! ૮ ・ﻌ・ა <br />
-                I am a M.S. student at KAIST AI, in <a class="no-underline" href="https://lklab.kaist.ac.kr/">Language &
-                    Knowledge Lab. </a>
-                <br /> <br />
-                I study how Large Language Models (LLMs) can enhance their <span class=" highlight"> reasoning
-                    abilities
-                </span> and achieve
-                <span class="highlight">self-improvement</span> with minimal human supervision. <br />
-                In my free time, I enjoy playing ᴊᴀᴢᴢ ᴘɪᴀɴᴏ and ꜱᴏᴄᴄᴇʀ. <br /> <br />
-
-                Overall, I try to be a better and positive person every day.&nbsp ദ്ദി・ᴗ・)✧
-            </div>
-            <br />
-            </p>
-        </div>
-    </div>
-
-
-    <div class="section">
-        <h2 class="section-title">Education</h2>
-        <hr class="divider" />
-
-        <div class="subsection last">
-            <div class="left-section">
-                <h4 class="subsection-title">M.S: KAIST, Kim Jaechul Graduate School of AI </p>
-                    <p class="minor">Advisor: Minjoon Seo</p>
-            </div>
-
-            <div class="right-section">
-                <div class="date-section">
-                    <p class="date">2024.02 ~ </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="subsection last">
-            <div class="left-section">
-                <h4 class="subsection-title">B.S: KAIST, School of Computing</p>
-                    <p class="minor">GPA: 3.96 / 4.3 | Young-Han Kim Global Leader Scholarship</p>
-            </div>
-
-            <div class="right-section">
-                <div class="date-section">
-                    <p class="date">2019.09 ~ 2024.02 </p>
-                </div>
-            </div>
-        </div>
-
-        
-    </div>
-
-    <div class="section">
-        <h2 class="section-title">Experience</h2>
-        <hr className="divider" />
-
-        <div class="subsection">
-            <div class="left-section">
-                <h3 class="subsection-title">Research Intern @ LK Lab, KAIST</h3>
-                <p class="major">Research on Large Language Model, exploring creative prompting methods</p>
-            </div>
-
-            <div class="right-section">
-                <div class="date-section">
-                    <p class="date">2022.12 ~ 2024.02 </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="subsection">
-            <div class="left-section">
-                <h3 class="subsection-title">Research Intern @ Naver CLOVA, Healthcare AI</h3>
-                <p class="major">Research on Electronic Health Record (EHR) Summarization and Domain-Specific
-                    Semantic
-                    Text Similarity. </p>
-            </div>
-
-            <div class="right-section">
-                <div class="date-section">
-                    <p class="date">2022.03 ~ 2022.08 </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="subsection">
-            <div class="left-section">
-                <h3 class="subsection-title">Research Intern @ KAIST Computer Vision & Learning Lab</h3>
-                <p class="major">Research on 2D Image Detection and Classification to aid automatic recyling</p>
-            </div>
-
-            <div class="right-section">
-                <div class="date-section">
-                    <p class="date">2021.06 ~ 2021.09 </p>
-                </div>
-            </div>
-        </div>     
-
-        <div class="subsection second">
-            <div class="left-section">
-                <h3 class="subsection-title">Collaborative Research w/ Acryl Inc.</h3>
-                <p class="major">Research on Facial Expression Recognition task</p>
-            </div>
-
-            <div class="right-section">
-                <div class="date-section">
-                    <p class="date">2021.03 ~ 2021.09 </p>
-                </div>
+            <div class="about-text">
+                <h3>About Me</h3>
+                I am a first year M.S. student at KAIST AI, in <a class="no-underline"
+                    href="https://lklab.kaist.ac.kr/">Language & Knowledge Lab.</a>
+                <br /><br />
+                I study how Large Language Models (LLMs) can enhance their <span class="highlight">reasoning
+                    abilities</span> and the mechanism behind how such ability emerges. <br /><br />
+                In my free time, I enjoy playing <span class="highlight">Jazz</span> and <span
+                    class="highlight">Soccer</span>.
             </div>
         </div>
     </div>
 
 
+    <div id="experiences" class="experiences-container hidden">
+        <div class="education">
+            <h3>Education</h3>
+            <div class="edu-box">
+                <div class="edu-degree">
+                    <h4>Master's Degree</h4>
+                    <h5>KAIST AI <br /><span>Advisor: Minjoon Seo</span></h5>
+                </div>
+                <div class="date">2024.02~</div>
+            </div>
+            <div class="edu-box">
+                <div class="edu-degree">
+                    <h4>Bachelor's Degree</h4>
+                    <h5>KAIST, <span class="comp">School of Computing</span><br /><span>Grade: 3.96 / 4.3</span></h5>
+                </div>
+                <div class="date">2019.08 ~ 2024.02</div>
+            </div>
+        </div>
+        <div class="work-experiences">
+            <h3>Reserach Internships</h3>
+            <div class="exp-box">
+                <h5>LK Lab, KAIST <br>
+                    <span>on Large Language Model's prompting space</span><br />
+                    <span class="date">2022.12 ~ 2024.02</span>
+                </h5>
+            </div>
+            <div class="exp-box">
+                <h5>Naver CLOVA, Healthcare AI <br>
+                    <span>on Electronic Health Record (EHR) Summarization and Embedding</span>
+                    <span class="date">2022.03 ~ 2022.08</span>
+                </h5>
+            </div>
+            <div class="exp-box">
+                <h5>KAIST Computer Vision & Learning Lab <br>
+                    <span>on 2D Image Detection and Classification</span><br />
+                    <span class="date">2021.06 ~ 2021.09</span>
+                </h5>
+            </div>
+            <div class="exp-box">
+                <h5>w/ Acryl Inc. <br>
+                    <span>on Facial Expression Recognition</span><br />
+                    <span class="date">2021.03 ~ 2021.09</span>
+                </h5>
+            </div>
+        </div>
+    </div>
 
-    <footer>
-        @hbin0701, Updated June 30th, 2024
-    </footer>
+    <div id="publications" class="publication-box hidden">
+        <h3>Selected Publications</h3>
+
+        <div class="publication-row">
+            <div class="publication-year">2024</div>
+            <div class="publications">
+                <div class="card">
+                    <img src="https://img.shields.io/badge/Under_Review-Arxiv-green" />
+                    <h5>The BiGGen Bench: A Principled Benchmark for Fine-grained Evaluation of Language Models with
+                        Language Models</h5>
+                    <h6 class="authors">S Kim, J Suk, J Cho, S Longpre, C Kim, D Yoon, G Son, Y Cho, S Shafayat, J Baek,
+                        S Park, <span class="highlight-author">H Hwang</span>, ... </h6>
+                    </h6>
+                    <h6><a href="https://arxiv.org/abs/2406.05761">PAPER</a> <a
+                            href="https://github.com/prometheus-eval/prometheus-eval/tree/main/BiGGen-Bench">CODE</a>
+                    </h6>
+                </div>
+                <div class="card">
+                    <img src="https://img.shields.io/badge/Under_Review-Arxiv-green" />
+                    <h5>Self-Explore to Avoid the Pit: Improving the Reasoning Capabilities of Language Models with
+                        Fine-grained Rewards</h5>
+                    <h6 class="authors"><span class="highlight-author">H Hwang</span>, D Kim, S Kim,
+                        S Ye, M Seo</h6>
+                    <h6><a href="https://arxiv.org/abs/2404.10346">PAPER</a> <a
+                            href="https://github.com/hbin0701/Self-Explore">CODE</a>
+                    </h6>
+                </div>
+            </div>
+            <div class="publications">
+                <div class="card">
+                    <img src="https://img.shields.io/badge/ICLR-Spotlight-yellow" />
+                    <h5>Flask: Fine-grained language model evaluation based on alignment skill sets</h5>
+                    <h6 class="authors">S Ye, D Kim, S Kim, <span class="highlight-author">H Hwang</span>, S Kim, Y Jo,
+                        J Thorne, J Kim, M Seo</h6>
+                    <h6><a href="https://arxiv.org/abs/2307.10928">PAPER</a> <a
+                            href="https://github.com/kaistAI/FLASK">CODE</a>
+                    </h6>
+                </div>
+                <div class="card">
+                    <img src="https://img.shields.io/badge/AAAI-pink" />
+                    <h5>Investigating the Effectiveness of Task-Agnostic Prefix Prompt for Instruction Following
+                    </h5>
+                    <h6 class="authors">S Ye, <span class="highlight-author">H Hwang</span>, S Yang, H Yun, Y Kim, M
+                        Seo
+                    </h6>
+                    <h6><a href="arxiv.org/abs/2307.10928">PAPER</a>
+                        <a href="https://github.com/kaistAI/FLASK">CODE</a>
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div class="publication-row">
+            <div class="publication-year">2022</div>
+            <div class="publications">
+                <div class="card">
+                    <img src="https://img.shields.io/badge/Preprint-Arxiv-green" />
+                    <h5>MED-SE: Medical Entity Definition-based Sentence Embedding</h5>
+                    <h6 class="authors"><span class="highlight-author">H Hwang</span>, H Yoo, Y Choi</h6>
+                    <h6><a href="https://arxiv.org/abs/2406.05761">PAPER</a> <a
+                            href="https://github.com/prometheus-eval/prometheus-eval/tree/main/BiGGen-Bench">CODE</a>
+                    </h6>
+                </div>
+                <div class="card">
+                    <img src="https://img.shields.io/badge/ICASSP-blue" />
+                    <h5>Vision transformer equipped with neural resizer on facial expression recognition task</h5>
+                    <h6 class="authors"><span class="highlight-author">H Hwang</span>, H Yoo, Y Choi</h6>
+                    <h6><a href="https://arxiv.org/abs/2406.05761">PAPER</a> <a
+                            href="https://github.com/prometheus-eval/prometheus-eval/tree/main/BiGGen-Bench">CODE</a>
+                    </h6>
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            @hbin0701, Updated August 17th, 2024
+        </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Get the sections to observe
+                const introSection = document.querySelector('.intro');
+                const aboutSection = document.querySelector('.about');
+                const expSection = document.querySelector('.experiences-container');
+                const publicationBox = document.querySelector('.publication-box');
+
+                // Create an Intersection Observer
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            // Add the 'visible' class to the section
+                            entry.target.classList.add('visible');
+                        } else {
+                            // Remove the 'visible' class when it's out of view
+                            entry.target.classList.remove('visible');
+                        }
+                    });
+                }, {
+                    threshold: 0.2 // Adjust this value if needed
+                });
+
+                // Observe the sections
+                if (introSection) {
+                    observer.observe(introSection);
+                }
+                if (aboutSection) {
+                    observer.observe(aboutSection);
+                }
+                if (expSection) {
+                    observer.observe(expSection);
+                }
+                if (publicationBox) {
+                    observer.observe(publicationBox);
+                }
+            });
+
+        </script>
 
 </body>
+
 
 </html>
