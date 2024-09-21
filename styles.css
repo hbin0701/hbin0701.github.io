@@ -223,18 +223,6 @@ body {
     z-index: 1;
 }
 
-.img-hover {
-    opacity: 0;
-    z-index: 2;
-}
-
-.about-img:hover .img-default {
-    opacity: 0;
-}
-
-.about-img:hover .img-hover {
-    opacity: 1;
-}
 
 .hidden {
     opacity: 0;
@@ -391,7 +379,7 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     position: relative;
     transition: transform 0.3s ease, z-index 0.3s ease, opacity 0.3s ease;
-    opacity: 0.6;
+    opacity: 1;
     margin-right: 5%;
 }
 
