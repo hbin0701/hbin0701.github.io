@@ -171,10 +171,9 @@ body {
 }
 
 .about-text .highlight {
-    background-color: #a3dfd2;
-    padding: 2px 5px;
     font-family: 'Libre Franklin', sans-serif;
     border-radius: 3px;
+    font-weight: bold;
 }
 
 .about-text .no-underline {
@@ -336,18 +335,16 @@ body {
     }
 }
 
-.publication-year {
-    margin-bottom: 20px;
-}
 
 .publications {
     display: flex;
     gap: -200px;
     position: relative;
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-family: 'Lato', sans-serif;
 }
+
 
 .publication-box h3 {
     font-family: 'lato', sans-serif;
@@ -369,25 +366,103 @@ body {
     font-weight: 200;
 }
 
-
 .card {
-    width: 400px;
+    width: 30%;
     height: 150px;
-    background-color: white;
+    perspective: 1000px;
+    perspective-origin: center center;
+    /* Center perspective */
+    /* Enables 3D effect */
+    position: relative;
+    padding-right: 2%;
+    padding-left: 2%;
+    margin-bottom: 20px;
+    /* Adds a black border */
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform-origin: center center;
+    /* Rotate around the card center */
+    /* Allows 3D transformations */
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    /* Smooth animation */
+}
+
+
+
+.card-front,
+.card-back {
+    /* border: 2px solid black; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* Ensures only one side is visible at a time */
     border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    transition: transform 0.3s ease, z-index 0.3s ease, opacity 0.3s ease;
-    opacity: 1;
-    margin-right: 5%;
+    /* Keeps shadow consistent */
 }
 
-.card:hover {
-    transform: scale(1.1);
-    z-index: 10;
-    opacity: 1;
+.card-front {
+    background-color: white;
+    transform: rotateY(0deg);
+    /* Default position for the front */
+    z-index: 2;
+    /* Ensure the front is on top initially */
 }
+
+.card-back {
+    background-color: white;
+    transform: rotateY(180deg);
+    /* Positioned to flip to the back */
+    z-index: 1;
+    /* Hidden behind the front initially */
+    font-weight: bold;
+    color: #333;
+    visibility: hidden;
+    /* Start hidden */
+}
+
+.card-back {
+    visibility: visible;
+    /* Make back visible after flipping */
+}
+
+.card-front h5 {
+    margin-top: 5% !important;
+}
+
+.card-front h6 {
+    display: flex;
+}
+
+.card-front a {
+    padding-right: 10%;
+}
+
+.card-back a {
+    padding-right: 10%;
+}
+
+.card-inner {
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .card-inner {
+    transform: translateY(-10px);
+}
+
+
 
 .publications:hover .card {
     opacity: 1;
@@ -397,22 +472,86 @@ body {
     opacity: 1;
 }
 
-.card h3 {
+.card h3,
+.card h5 {
     margin-top: 0;
     color: #333;
     font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
 }
 
 .card p {
     color: #666;
     font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
 }
 
-.card img {
-    margin-bottom: 0px;
+.card a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 10px;
 }
 
-.venue {
+.card {
+    width: 400px;
+    height: 150px;
+    perspective: 1000px;
+    /* Enables 3D effect */
+    margin-right: 2%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    /* Indicate the card is clickable */
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    /* Allows 3D transformations */
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    /* Smooth animation */
+}
+
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+    /* Flips the card */
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* Hides the side not facing the viewer */
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* Keeps shadow consistent */
+}
+
+.card-front {
+    background-color: white;
+    transform: rotateY(0deg);
+    /* Default position for the front */
+}
+
+.card-back {
+    /* Positioned to flip to the back */
+    margin-right: 0px;
+    padding-left: 0px;
+    font-weight: bold;
+    color: #333;
+    right: 3%;
+}
+
+– .venue {
     font-size: 12px;
 }
 
@@ -467,8 +606,61 @@ body {
     transform-origin: left;
 }
 
+
+/* Publication Box with Vertical Timeline */
+.publication-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 3rem;
+    /* Space for the timeline */
+}
+
+/* Publication Row Styling */
+.publication-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+}
+
+
+
+/* Year Block */
+.publication-year {
+    font-size: 15px;
+    width: 5%;
+}
+
+/* Publications Aligned Horizontally */
+.publications {
+    display: flex;
+    gap: 2rem;
+    flex-grow: 1;
+    align-items: flex-start;
+}
+
+
+/* Publication Row Styling */
+.publication-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+}
+
+.card-back p {
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
 footer {
+    margin-top: 3%;
     text-align: center;
     font-size: 12px;
     color: #888;
+    margin-bottom: 3%;
 }

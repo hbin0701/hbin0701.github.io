@@ -10,22 +10,13 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <ul class="nav-items">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experiences">Experiences</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#music">Music</a></li>
-        </ul>
-    </nav>
-
     <div class="intro">
         <div class="intro-text">
             <h3>안녕하세요!</h3>
             <h1>I'm <span class="highlight">Hyeonbin</span> ദ്ദി・ᴗ・)✧ </h1>
             <h2>#NLProc</h2>
             <ul class="contact-info">
-                <li>Email: <a href="mailto:bin@kaist.ac.kr">bin@kaist.ac.kr</a></li>
+                <li>Email: <a href="mailto:hbin0701@kaist.ac.kr">hbin0701@kaist.ac.kr</a></li>
                 <li>Location: Seoul, South Korea</li>
             </ul>
             <div class="social-media">
@@ -72,13 +63,13 @@
 
             <div class="about-text">
                 <h3>About Me</h3>
-                I am a first year M.S. student at KAIST AI, in <a class="no-underline"
+                I am a second year M.S. student at KAIST AI, in <a class="no-underline"
                     href="https://lklab.kaist.ac.kr/">Language & Knowledge Lab.</a>
                 <br /><br />
-                I study how Large Language Models (LLMs) can enhance their <span class="highlight">reasoning
-                    abilities</span> and the mechanism behind how such ability emerges. <br /><br />
-                In my free time, I enjoy playing <span class="highlight">Jazz</span> and <span
-                    class="highlight">Soccer</span>.
+                I study how Large Language Models (LLMs) can improve their reasoning
+                abilities using RL-based approaches. I am also interested in understanding the mechanisms behind the
+                development of such reasoning capabilities. <br /><br />
+                In my free time, I enjoy playing Jazz and Soccer.
             </div>
         </div>
     </div>
@@ -135,118 +126,250 @@
         <h3>Selected Publications</h3>
 
         <div class="publication-row">
-            <div class="publication-year">2024</div>
+            <div class="publication-year">2025</div>
             <div class="publications">
                 <div class="card">
-                    <img src="https://img.shields.io/badge/Under_Review-Arxiv-white" />
-                    <h5>The BiGGen Bench: A Principled Benchmark for Fine-grained Evaluation of Language Models with
-                        Language Models</h5>
-                    <h6 class="authors">S Kim, J Suk, J Cho, S Longpre, C Kim, D Yoon, G Son, Y Cho, S Shafayat, J Baek,
-                        S Park, <span class="highlight-author">H Hwang</span>, ... </h6>
-                    </h6>
-                    <h6><a href="https://arxiv.org/abs/2406.05761">PAPER</a> <a
-                            href="https://github.com/prometheus-eval/prometheus-eval/tree/main/BiGGen-Bench">CODE</a>
-                    </h6>
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h5>The BiGGen Bench: A Principled Benchmark for Fine-grained Evaluation of Language Models
+                                with Language Models</h5>
+                            <h6 class="authors">S Kim, J Suk, ... (others not shown), <span class="highlight-author">H
+                                    Hwang</span>, ...</h6>
+                            <h6>
+                                <a href="https://arxiv.org/abs/2406.05761">PAPER</a>
+                                <a
+                                    href="https://github.com/prometheus-eval/prometheus-eval/tree/main/BiGGen-Bench">CODE</a>
+                            </h6>
+                            <h6 style="margin-top: -15px; font-weight: bold"><i>@ NAACL 2025</i></h6>
+                        </div>
+                        <div class="card-back">
+                            <p>We introduce <b>BiGGen Bench</b>, a comprehensive benchmark that evaluates nine distinct
+                                capabilities of language models across 77 tasks using instance-specific criteria,
+                                addressing limitations of abstract and biased evaluation methods while demonstrating its
+                                utility on 103 frontier LMs.</p>
+                            <p>#Evaluation #Benchmark</p>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="card">
-                    <img src="https://img.shields.io/badge/EMNLP_(Findings)-BAFFC9" />
-                    <img src="https://img.shields.io/badge/ACL Workshop_NLRSE_(Oral)-BAE1FF" />
-                    <h5>Self-Explore to Avoid the Pit: Improving the Reasoning Capabilities of Language Models with
-                        Fine-grained Rewards</h5>
-                    <h6 class="authors"><span class="highlight-author">H Hwang</span>, D Kim, S Kim,
-                        S Ye, M Seo</h6>
-                    <h6><a href="https://arxiv.org/abs/2404.10346">PAPER</a> <a
-                            href="https://github.com/hbin0701/Self-Explore">CODE</a>
-                    </h6>
-                </div>
-            </div>
-            <div class="publications">
-                <div class="card">
-                    <img src="https://img.shields.io/badge/ICLR_(Spotlight)-FFDAB9" />
-                    <h5>Flask: Fine-grained language model evaluation based on alignment skill sets</h5>
-                    <h6 class="authors">S Ye, D Kim, S Kim, <span class="highlight-author">H Hwang</span>, S Kim, Y Jo,
-                        J Thorne, J Kim, M Seo</h6>
-                    <h6><a href="https://arxiv.org/abs/2307.10928">PAPER</a> <a
-                            href="https://github.com/kaistAI/FLASK">CODE</a>
-                    </h6>
-                </div>
-                <div class="card">
-                    <img src="https://img.shields.io/badge/AAAI-FFE5B4" />
-                    <h5>Investigating the Effectiveness of Task-Agnostic Prefix Prompt for Instruction Following
-                    </h5>
-                    <h6 class="authors">S Ye, <span class="highlight-author">H Hwang</span>, S Yang, H Yun, Y Kim, M
-                        Seo
-                    </h6>
-                    <h6><a href="arxiv.org/abs/2307.10928">PAPER</a>
-                        <a href="https://github.com/kaistAI/FLASK">CODE</a>
-                    </h6>
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h5>Knowledge Entropy Decay during Language Model Pretraining Hinders New Knowledge
+                                Acquisition</h5>
+                            <h6 class="authors">Kim, H Lee, H Cho, J Jang, <span class="highlight-author">H
+                                    Hwang</span>, S Won, Y Ahn, D Lee, M Seo</h6>
+                            <h6>
+                                <a href="https://arxiv.org/abs/2410.01380">PAPER</a>
+                                <a href="https://github.com/kaistAI/Knowledge-Entropy">CODE</a>
+                            </h6>
+                            <h6 style="margin-top: -15px; font-weight: bold"><i>@ ICLR 2025 & AAAI 2025 KnowFM WS
+                                    (Oral)</i></h6>
+                        </div>
+                        <div class="card-back">
+                            <p>
+                                We introduce the concept of <b>knowledge entropy</b> to analyze how a model's reliance
+                                on
+                                memory
+                                sources evolves during pretraining, revealing that decreasing knowledge entropy impairs
+                                knowledge acquisition and retention, while reactivating inactive memory sources can
+                                somewhat alleviate this issue.</p>
+                            </h5>
+                            <p>#Knowledge Entropy #Pretraining</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="publication-row">
+            <div class="publication-year">2024</div>
+            <div class="publications">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h5>Self-Explore to Avoid the Pit: Improving the Reasoning Capabilities of Language Models
+                                with Fine-grained Rewards</h5>
+                            <h6 class="authors"><span class="highlight-author">H Hwang</span>, D Kim, S Kim, S Ye, M Seo
+                            </h6>
+                            <h6>
+                                <a href="https://arxiv.org/abs/2404.10346">PAPER</a>
+                                <a href="https://github.com/hbin0701/Self-Explore">CODE</a>
+                            </h6>
+                            <h6 style="margin-top: -15px; font-weight: bold"><i>@ EMNLP 2024 (Findings) & ACL 2024 NLRSE
+                                    WS (Oral)</i></h6>
+                        </div>
+                        <div class="card-back">
+                            <p>We propose <b>Self-Explore</b>, a method where LLMs identify and learn from their first
+                                reasoning errors to self-improve using fine-grained rewards, achieving notable
+                                performance gains over supervised fine-tuning on reasoning tasks like GSM8K and MATH.
+                            </p>
+                            <p>#Reasoning #Self-Training #Fine-grained Rewards</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h5>Flask: Fine-grained Language Model Evaluation Based on Alignment Skill Sets</h5>
+                            <h6 class="authors">S Ye, D Kim, S Kim, <span class="highlight-author">H Hwang</span>, S
+                                Kim, Y Jo, J Thorne, J Kim, M Seo</h6>
+                            <h6>
+                                <a href="https://arxiv.org/abs/2307.10928">PAPER</a>
+                                <a href="https://github.com/kaistAI/FLASK">CODE</a>
+                            </h6>
+                            <h6 style="margin-top: -15px; font-weight: bold"><i>@ ICLR 2024 (Spotlight)</i></h6>
+                        </div>
+                        <div class="card-back">
+                            <p>We introduce <b>FLASK</b>, a fine-grained evaluation protocol that decomposes
+                                instruction-following into skill set-level scoring, offering a more interpretable and
+                                reliable assessment of LLM performance compared to coarse-grained methods.</p>
+                            <p>#Evaluation #Fine-grained </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="publication-row">
+            <div class="publication-year" style="visibility: hidden" : white>2024</div>
+            <div class="publications">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h5>Investigating the Effectiveness of Task-Agnostic <br> Prefix Prompt for Instruction
+                                Following
+                            </h5>
+                            <h6 class="authors">S Ye, <span class="highlight-author">H Hwang</span>, S Yang, H Yun, Y
+                                Kim, M Seo</h6>
+                            <h6>
+                                <a href="https://arxiv.org/abs/2302.14691">PAPER</a>
+                                <a href="https://github.com/seonghyeonye/TAPP">CODE</a>
+                            </h6>
+                            <h6 style="margin-top: -15px; font-weight: bold"><i>@ AAAI 2024</i></h6>
+                        </div>
+                        <div class="card-back">
+                            <p>
+                                We demonstrate that prepending a <b>Task-Agnostic Prefix Prompt</b> (TAPP) to inputs
+                                significantly enhances the instruction-following ability of both pre-trained and
+                                instruction-tuned LLMs during inference, suggesting that a fixed, heuristic-based prompt
+                                can activate underutilized capabilities in these models.</p>
+                            <p>#Instruction Following #Prompt</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card" style="visibility: hidden">
+                </div>
+            </div>
+        </div>
+
         <div class="publication-row">
             <div class="publication-year">2022</div>
             <div class="publications">
                 <div class="card">
-                    <img src="https://img.shields.io/badge/Preprint-white" />
-                    <h5>MED-SE: Medical Entity Definition-based Sentence Embedding</h5>
-                    <h6 class="authors"><span class="highlight-author">H Hwang</span>, H Yoo, Y Choi</h6>
-                    <h6><a href="https://arxiv.org/abs/2212.04734">PAPER</a></h6>
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h5>MED-SE: Medical Entity Definition-based Sentence Embedding</h5>
+                            <h6 class="authors"><span class="highlight-author">H Hwang</span>, H Yoo, Y Choi</h6>
+                            <h6>
+                                <a href="https://arxiv.org/abs/2212.04734">PAPER</a>
+                            </h6>
+                            <h6 style="margin-top: -15px; font-weight: bold"><i>Preprint (Internship Work @ Naver
+                                    Healthcare AI)</i></h6>
+                        </div>
+                        <div class="card-back">
+                            <p> <b>MED-SE</b> framework leverages medical entity definitions
+                                to achieve superior sentence embedding performance for clinical texts,
+                                highlighting the effectiveness of entity-centric contrastive learning
+                                in addressing domain-specific challenges.</p>
+                            <p>#Healthcare #EHR #Sentence Embedding</p>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="card">
-                    <img src="https://img.shields.io/badge/ICASSP-E6E6FA" />
-                    <h5>Vision transformer equipped with neural resizer on facial expression recognition task</h5>
-                    <h6 class="authors"><span class="highlight-author">H Hwang</span>, S Kim, WJ Park, J Seo, K Ko, H
-                        Yeo</h6>
-                    <h6><a href="https://arxiv.org/abs/2204.02181">PAPER</a> <a
-                            href="https://github.com/hbin0701/VT_with_NR_for_FER">CODE</a>
-                    </h6>
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h5>Vision Transformer Equipped with Neural Resizer on Facial Expression Recognition Task
+                            </h5>
+                            <h6 class="authors"><span class="highlight-author">H Hwang</span>, S Kim, WJ Park, J Seo, K
+                                Ko, H Yeo</h6>
+                            <h6>
+                                <a href="https://arxiv.org/abs/2204.02181">PAPER</a>
+                                <a href="https://github.com/hbin0701/VT_with_NR_for_FER">CODE</a>
+                            </h6>
+                            <h6 style="margin-top: -15px; font-weight: bold"><i>@ ICASSP 2022</i></h6>
+                        </div>
+                        <div class="card-back">
+                            <p><b>Neural Resizer</b> framework enhances Transformer performance in facial
+                                expression recognition by compensating for low-resolution data through a data-driven
+                                resizing method and a novel F-PDLS loss function, achieving near state-of-the-art
+                                results.</p>
+                            <p>#Computer Vision #Facial Expression Recognition</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
-        <footer>
-            @hbin0701, Updated September 21st, 2024
-        </footer>
+    </div>
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                // Get the sections to observe
-                const introSection = document.querySelector('.intro');
-                const aboutSection = document.querySelector('.about');
-                const expSection = document.querySelector('.experiences-container');
-                const publicationBox = document.querySelector('.publication-box');
+    <footer>
+        @hbin0701, Updated January 25th, 2025
+    </footer>
 
-                // Create an Intersection Observer
-                const observer = new IntersectionObserver(entries => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            // Add the 'visible' class to the section
-                            entry.target.classList.add('visible');
-                        } else {
-                            // Remove the 'visible' class when it's out of view
-                            entry.target.classList.remove('visible');
-                        }
-                    });
-                }, {
-                    threshold: 0.2 // Adjust this value if needed
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Select all cards
+            const cards = document.querySelectorAll('.card');
+
+            // Add click event listener to each card
+            cards.forEach(card => {
+                card.addEventListener('click', function () {
+                    card.classList.toggle('flipped'); // Toggle the flipped class
                 });
+            });
+        });
 
-                // Observe the sections
-                if (introSection) {
-                    observer.observe(introSection);
-                }
-                if (aboutSection) {
-                    observer.observe(aboutSection);
-                }
-                if (expSection) {
-                    observer.observe(expSection);
-                }
-                if (publicationBox) {
-                    observer.observe(publicationBox);
-                }
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the sections to observe
+            const introSection = document.querySelector('.intro');
+            const aboutSection = document.querySelector('.about');
+            const expSection = document.querySelector('.experiences-container');
+            const publicationBox = document.querySelector('.publication-box');
+
+            // Create an Intersection Observer
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Add the 'visible' class to the section
+                        entry.target.classList.add('visible');
+                    } else {
+                        // Remove the 'visible' class when it's out of view
+                        entry.target.classList.remove('visible');
+                    }
+                });
+            }, {
+                threshold: 0.2 // Adjust this value if needed
             });
 
-        </script>
+            // Observe the sections
+            if (introSection) {
+                observer.observe(introSection);
+            }
+            if (aboutSection) {
+                observer.observe(aboutSection);
+            }
+            if (expSection) {
+                observer.observe(expSection);
+            }
+            if (publicationBox) {
+                observer.observe(publicationBox);
+            }
+        });
+
+    </script>
 
 </body>
 
