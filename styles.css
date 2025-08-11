@@ -1453,3 +1453,111 @@ a:hover {
 .hero-wrap {
     padding-left: 0 !important;
 }
+
+/* Responsive (mobile) tweaks) */
+@media (max-width: 780px) {
+
+    /* Stack layout */
+    .app-grid {
+        grid-template-columns: 1fr !important;
+        width: 94vw;
+        margin: 20px auto;
+        gap: 16px;
+    }
+
+    .sidebar {
+        position: static !important;
+        height: auto !important;
+        top: auto !important;
+    }
+
+    .sidebar-inner {
+        padding: 14px;
+    }
+
+    .panel {
+        min-height: auto !important;
+    }
+
+    /* Social: single column on narrow screens */
+    .social-list {
+        grid-template-columns: 1fr !important;
+        gap: 8px !important;
+    }
+
+    /* Timeline: left-align and simplify visuals */
+    .direction-l,
+    .direction-r {
+        float: none !important;
+        width: 100% !important;
+        text-align: left !important;
+    }
+
+    .flag-wrapper {
+        justify-content: flex-start !important;
+    }
+
+    .timeline:before,
+    .timeline li::before {
+        display: none !important;
+    }
+
+    .timeline {
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .timeline li {
+        padding: 0.9em 0 !important;
+    }
+
+    .time-wrapper {
+        font-size: .74rem;
+    }
+}
+
+/* About: increase top spacing */
+.panel-hero .hero-wrap {
+    transform: none !important;
+    margin-top: clamp(12px, 3vh, 28px);
+}
+
+@media (max-width: 780px) {
+    .panel-hero .hero-wrap {
+        margin-top: 22px !important;
+    }
+}
+
+/* Mobile Experience refinements */
+@media (max-width: 780px) {
+
+    /* Stack title and date; left align */
+    .flag-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .time-wrapper {
+        order: 2;
+        font-size: .72rem;
+        opacity: .9;
+    }
+
+    /* Remove mobile card boxes from desc */
+    .timeline .desc {
+        background: transparent !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+        margin-top: .4em !important;
+    }
+
+    /* Add gentle separators between items */
+    .timeline li+li {
+        border-top: 1px solid var(--border);
+        margin-top: 8px;
+        padding-top: 10px;
+    }
+}
