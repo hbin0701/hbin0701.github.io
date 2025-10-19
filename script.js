@@ -43,32 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
   showPanel(initial);
   history.replaceState(null, '', `#${initial}`);
 
-  // Typing effect for hero headline
-  const typeHero = () => {
-    const head = document.querySelector('.hero-head');
-    if (!head) return;
-    const full = head.getAttribute('data-full') || head.textContent.trim();
-    head.setAttribute('data-full', full);
-    head.textContent = '';
-    const caret = document.createElement('span');
-    caret.className = 'typing-caret';
-    head.appendChild(caret);
-    let i = 0;
-    const tick = () => {
-      if (!head.isConnected) return; // safety
-      if (i <= full.length) {
-        head.firstChild && head.firstChild.nodeType === 3 && head.removeChild(head.firstChild);
-        caret.insertAdjacentText('beforebegin', full.slice(0, i));
-        i += 1;
-        setTimeout(tick, i < 6 ? 80 : 45); // slightly faster as it goes
-      } else {
-        // keep caret blinking
-      }
-    };
-    tick();
-  };
-
-  if (initial === 'about') setTimeout(typeHero, 150);
+  // Remove typing effect for a cleaner, calmer hero headline
 
   // Animate experience cards when visible
   const animEls = document.querySelectorAll('.animate-on-show, .tl-content');

@@ -410,35 +410,113 @@ a:hover {
     margin-bottom: 12px;
 }
 
-.subhead {
-    margin: 0 0 8px;
-    color: var(--muted);
-    font-size: .98rem;
+/* subhead/highlight styles removed */
+
+/* About layout enhancements */
+.hero-headwrap {
+    display: grid;
+    align-content: start;
 }
 
-.highlight {
-    position: relative;
+/* removed lede-2 (second paragraph) styling */
+
+/* remove research card styles */
+
+/* Badges: calmer contrast, tighter spacing */
+.badge-group {
+    gap: 8px;
+    margin: 10px 0 10px;
+}
+
+.badge {
+    background: var(--bg-soft);
+    border-color: var(--border);
     color: var(--ink);
     font-weight: 700;
 }
 
-.highlight::after {
+/* Key points: subtle bullets */
+.key-points {
+    list-style: none;
+    padding-left: 0;
+}
+
+.key-points li {
+    position: relative;
+    padding-left: 14px;
+}
+
+.key-points li::before {
     content: "";
     position: absolute;
     left: 0;
-    right: 0;
-    bottom: 2px;
-    height: 0.6em;
-    background: linear-gradient(180deg, rgba(255, 235, 59, .0) 0%, rgba(255, 235, 59, .45) 100%);
-    z-index: -1;
-    border-radius: 4px;
+    top: 0.65em;
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: var(--ink);
+    opacity: .2;
 }
 
-.lede {
-    margin: 0 0 12px;
-    color: var(--muted);
-    font-size: .96rem;
+/* Markdown-like blockquote for About */
+.md-quote {
+    margin: 8px 0 0;
+    padding: 12px 14px 12px 16px;
+    border-left: 2px solid var(--border);
+    background: transparent;
+    border-radius: 8px;
+    font-size: .94rem;
+    line-height: 1.55;
 }
+
+.md-quote p {
+    margin: 0 0 10px;
+    color: var(--muted);
+}
+
+.md-quote p:last-child {
+    margin-bottom: 0;
+}
+
+/* Blockquote variants */
+.quote-lead {
+    color: var(--ink);
+    font-weight: 500;
+    font-size: .98rem;
+}
+
+.lead-strong {
+    font-weight: 800;
+}
+
+/* Subtle palette blue for named entities */
+.palette-blue {
+    color: #60a5fa;
+    /* lighter blue */
+}
+
+.quote-note {
+    color: var(--muted);
+    font-style: italic;
+    font-weight: 400;
+    font-size: .92rem;
+    opacity: .82;
+}
+
+/* Small, gray inline de-emphasis */
+.inline-muted {
+    color: var(--muted);
+    font-size: .86em;
+    font-weight: 400;
+}
+
+@media (max-width: 980px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* lede style removed; paragraphs default */
 
 /* Typing caret */
 .typing-caret {
