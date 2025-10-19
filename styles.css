@@ -405,9 +405,9 @@ a:hover {
 }
 
 .hero-head {
-    font-size: clamp(2.2rem, 6vw, 3.4rem);
+    font-size: clamp(1.9rem, 5.2vw, 3rem);
     letter-spacing: -0.02em;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 /* subhead/highlight styles removed */
@@ -465,7 +465,7 @@ a:hover {
     border-left: 2px solid var(--border);
     background: transparent;
     border-radius: 8px;
-    font-size: .94rem;
+    font-size: .9rem;
     line-height: 1.55;
 }
 
@@ -482,7 +482,7 @@ a:hover {
 .quote-lead {
     color: var(--ink);
     font-weight: 500;
-    font-size: .98rem;
+    font-size: .94rem;
 }
 
 .lead-strong {
