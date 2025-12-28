@@ -683,6 +683,109 @@ a:hover {
     margin: 1.1rem 0 1.5rem;
 }
 
+.experience-footnote {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    font-style: italic;
+    color: var(--muted);
+    font-size: .9rem;
+    letter-spacing: .04em;
+    opacity: .8;
+}
+
+.experience-footnote .footnote-item {
+    flex: 1;
+    text-align: center;
+}
+
+.pub-split {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    align-items: start;
+    margin-top: .6rem;
+}
+
+.pub-box {
+    --box-highlight: rgba(250, 204, 21, .55); /* default marker (yellow-ish) */
+    border: 1.5px solid rgba(10, 10, 10, .22);
+    border-radius: 18px;
+    background: var(--surface);
+    padding: 14px 20px;
+    box-shadow: 0 10px 26px rgba(2, 6, 23, .06);
+}
+
+:root[data-theme="dark"] .pub-box {
+    border-color: rgba(245, 245, 245, .18);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, .35);
+}
+
+.pub-box--selected {
+    --box-highlight: rgba(134, 239, 172, .55); /* marker light green */
+}
+
+.pub-box--others {
+    --box-highlight: rgba(186, 230, 253, .55); /* marker light blue */
+}
+
+.pub-box-title {
+    margin: 0 0 .4rem;
+    font-size: .95rem;
+    font-weight: 900;
+    letter-spacing: -.01em;
+    position: relative;
+    display: inline-block;
+    padding: .06rem .42rem .08rem;
+    isolation: isolate;
+}
+
+.pub-box-title::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    right: -6px;
+    top: 52%;
+    height: 62%;
+    background: var(--box-highlight);
+    border-radius: 10px 14px 8px 16px;
+    transform: rotate(-1.2deg);
+    z-index: -1;
+}
+
+.pub-box-title::after {
+    content: "";
+    position: absolute;
+    left: -7px;
+    right: -7px;
+    top: 50%;
+    height: 66%;
+    border: 1px solid rgba(10, 10, 10, .22);
+    border-radius: 12px 16px 10px 18px;
+    transform: rotate(.8deg);
+    z-index: -1;
+    opacity: .6;
+}
+
+:root[data-theme="dark"] .pub-box-title::after {
+    border-color: rgba(245, 245, 245, .22);
+}
+
+.pub-box .pub-year-chip {
+    position: static;
+    top: auto;
+    background: transparent;
+    padding: .2rem 0;
+}
+
+.pub-box .pub-group {
+    margin: .9rem 0 1.1rem;
+}
+
+.pub-box .pub-group:last-child {
+    margin-bottom: 0;
+}
+
 .pub-toolbar {
     display: flex;
     justify-content: flex-end;
@@ -696,6 +799,9 @@ a:hover {
     padding: .45rem .8rem;
     background: var(--surface);
     color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.02em;
 }
 
 .pub-year-chip {
@@ -732,6 +838,8 @@ a:hover {
     display: grid;
     gap: .8rem;
 }
+
+/* (pub-split is intentionally vertical on all screen sizes) */
 
 .pub-item {
     position: relative;
@@ -1506,6 +1614,27 @@ a:hover {
     font-weight: 600;
     color: var(--muted);
     letter-spacing: 0;
+}
+
+/* Experience timeline: subtitle + role stacked (role below, smaller) */
+.flag-meta {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 2px;
+    margin-top: 2px;
+}
+
+.flag-meta .flag-subtitle {
+    display: block;
+    margin-top: 0;
+}
+
+.flag-role {
+    display: block;
+    font-size: .72rem;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--muted);
 }
 
 /* Timeline flags: force left-aligned text on both sides */
