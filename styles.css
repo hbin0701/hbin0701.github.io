@@ -405,9 +405,17 @@ a:hover {
 }
 
 .hero-head {
-    font-size: clamp(1.9rem, 5.2vw, 3rem);
+    display: grid;
+    gap: .14em;
+    font-size: clamp(2.15rem, 5.7vw, 3.35rem);
+    line-height: 1.02;
     letter-spacing: -0.02em;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
+}
+
+.hero-head-greeting {
+    display: block;
+    letter-spacing: .015em;
 }
 
 /* subhead/highlight styles removed */
@@ -1803,5 +1811,43 @@ a:hover {
         border-top: 1px solid var(--border);
         margin-top: 8px;
         padding-top: 10px;
+    }
+}
+
+/* Keep the Experience timeline airy in the sidebar-sized desktop view. */
+@media (min-width: 781px) and (max-width: 980px) {
+
+    #experience .direction-l,
+    #experience .direction-r {
+        float: none !important;
+        width: calc(50% - 40px) !important;
+    }
+
+    #experience .direction-l {
+        float: left !important;
+        text-align: right !important;
+    }
+
+    #experience .direction-r {
+        float: right !important;
+        text-align: left !important;
+    }
+
+    #experience .timeline li::before {
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+
+    #experience .desc {
+        position: static !important;
+        padding: 0 !important;
+        background: transparent !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+        margin: 0.7em 0.75em 0 0 !important;
+    }
+
+    #experience .direction-r .desc {
+        margin: 0.7em 0 0 0.75em !important;
     }
 }
