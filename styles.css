@@ -1702,6 +1702,10 @@ a:hover {
     margin-right: 0 !important;
 }
 
+#experience .timeline {
+    margin-top: clamp(34px, 6vh, 64px) !important;
+}
+
 .hero-wrap {
     padding-left: 0 !important;
 }
