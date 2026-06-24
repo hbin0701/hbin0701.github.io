@@ -2016,6 +2016,10 @@ body {
     font-weight: 400;
 }
 
+.md-quote b {
+    font-weight: 560;
+}
+
 .quote-note {
     font-size: .92rem;
     opacity: .7;
@@ -2027,7 +2031,7 @@ body {
 
 .palette-blue {
     color: var(--ink);
-    font-weight: 600;
+    font-weight: 560;
     border-bottom: 1px solid currentColor;
     transition: opacity .15s ease;
 }
@@ -2288,20 +2292,16 @@ body {
 }
 
 .pub-meta .venue > span {
-    display: inline-flex !important;
-    align-items: center;
-    gap: 6px;
-    background: var(--tier-main-soft);
+    display: inline !important;
     color: var(--ink);
-    padding: 3px 10px;
-    border-radius: 999px;
-    font-size: .74rem;
+    padding: 0;
+    font-size: .76rem;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 1.4;
+    line-height: 1.6;
     position: static;
     width: auto;
-    margin-left: -10px;
+    background: none;
 }
 
 .pub-meta .venue > span::after,
@@ -2321,17 +2321,14 @@ body {
 
 .pub-meta .venue > span.venue-preprint {
     font-style: italic;
-    color: var(--muted);
+    color: var(--ink);
 }
 
-/* Workshop venues — demoted: smaller, lighter, no pill background */
+/* Workshop venues — slightly smaller but same highlight + ink color */
 .pub-meta .venue > span.venue-workshop {
-    background: transparent;
-    color: var(--muted);
-    padding: 0;
-    font-size: .7rem;
-    font-weight: 500;
-    opacity: .8;
+    color: var(--ink);
+    font-size: .72rem;
+    font-weight: 600;
 }
 
 /* Hide stray <br> inside venue (HTML has them between stacked spans) */
@@ -2587,30 +2584,37 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 8px;
-    background: var(--surface);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #fff;
     border: 1px solid var(--border);
     overflow: hidden;
     flex-shrink: 0;
-    box-shadow: 0 1px 2px rgba(15, 23, 42, .04);
+    box-shadow: 0 1px 3px rgba(15, 23, 42, .06), inset 0 0 0 1px rgba(255, 255, 255, .6);
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.exp-entry:hover .exp-logo {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(15, 23, 42, .1);
 }
 
 .exp-logo img {
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
     object-fit: contain;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 .exp-org {
     font-family: var(--font-display);
-    font-size: 1.15rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
+    font-size: 1.08rem;
+    font-weight: 600;
+    letter-spacing: -0.005em;
     color: var(--ink);
     margin: 0;
-    line-height: 1.2;
+    line-height: 1.25;
 }
 
 .exp-role {
@@ -2703,6 +2707,17 @@ body {
     font-size: .9rem;
 }
 
+.service-list li.has-honor {
+    flex-wrap: wrap;
+    row-gap: 0;
+}
+
+.service-honor-row {
+    flex-basis: 100%;
+    text-align: right;
+    margin-top: -4px;
+}
+
 .service-venue {
     font-family: var(--font-display);
     font-weight: 600;
@@ -2721,14 +2736,27 @@ body {
 }
 
 .service-honor {
-    font-size: .68rem;
-    font-weight: 700;
-    letter-spacing: .02em;
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .01em;
     color: var(--ink);
-    background: var(--bg-soft);
-    border: 1px solid var(--border);
-    padding: 2px 7px;
-    border-radius: 999px;
+    white-space: nowrap;
+    padding: .05em .35em;
+    /* hand-drawn highlighter marker streak */
+    background-image: linear-gradient(
+        -100deg,
+        rgba(251, 191, 36, .15),
+        rgba(251, 191, 36, .65) 4%,
+        rgba(245, 158, 11, .55) 92%,
+        rgba(251, 191, 36, .12)
+    );
+    background-repeat: no-repeat;
+    background-size: 100% 88%;
+    background-position: 0 60%;
+    /* uneven corners = sketchy marker edges */
+    border-radius: 1.1em .35em .9em .4em / .7em .9em .4em 1em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
 /* --- About / quote inline tighter --- */
