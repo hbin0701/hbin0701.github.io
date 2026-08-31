@@ -7,13 +7,13 @@
     <meta name="google-site-verification" content="RbzwkvoL0jexA8TMZ7m0Lva6O-PvrL_XO9veOpXzc_E" />
     <title>Hyeonbin Hwang</title>
     <meta name="description"
-        content="Hyeonbin Hwang — KAIST AI M.S. student. LLM reasoning, prompting space, and evaluation. Publications, experience, and contact." />
+        content="Hyeonbin Hwang — Ph.D. student at KAIST STAI Lab. LLM reasoning, post-training, and evaluation. Publications, experience, and contact." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=20260515i" />
+    <link rel="stylesheet" href="./styles.css?v=20260831b" />
 </head>
 
 <body>
@@ -27,7 +27,7 @@
                     <img class="avatar" src="./new_portrait.png" alt="Portrait of Hyeonbin" />
                     <div class="who">
                         <h1 class="name">Hyeonbin Hwang</h1>
-                        <p class="role">KAIST AI</p>
+                        <p class="role">Ph.D. Student, KAIST AI</p>
                     </div>
                 </div>
 
@@ -124,10 +124,14 @@
                             <div class="hero-intro">
                                 <p class="eyebrow">About</p>
                             </div>
-                            <h2 class="headline hero-head"><span class="hero-head-greeting">Hi!</span><span>I'm
-                                    Hyeonbin.</span></h2>
-                            <blockquote class="md-quote">
-                                <p class="quote-lead"><span>I’m an incoming Ph.D. student at <a class="palette-blue"
+
+                            <div class="about-top">
+                                <div class="about-intro">
+                                    <div class="about-heading">
+                                        <h2 class="about-name">Hyeonbin Hwang</h2>
+                                        <p class="about-title">Ph.D. Student · KAIST STAI Lab</p>
+                                    </div>
+                                    <p class="about-lead">I’m a 1st-year Ph.D. student at <a class="palette-blue"
                                             href="https://seongjoonoh.com/" target="_blank" rel="noopener"><b>KAIST STAI
                                                 Lab</b></a>, advised by <a class="palette-blue"
                                             href="https://seongjoonoh.com/" target="_blank" rel="noopener"><b>Seongjoon
@@ -136,21 +140,45 @@
                                                 AI</b></a>, where I was advised by <a class="palette-blue"
                                             href="https://scholar.google.com/citations?user=zYze5fIAAAAJ&hl=en"
                                             target="_blank" rel="noopener"><b>Minjoon Seo</b></a>. I received my B.S. in
-                                        CS from KAIST.
-                                </p>
+                                        CS from KAIST.</p>
 
-                                <p>My long-term goal is to build models that reason beyond the human data
-                                    distribution. To this end, I study the <b>learning signals, data structures, and
-                                    evaluation methods</b> that enable models to self-train and generalize systematically
-                                    in multi-step reasoning. Currently, I am interested in iterative RL post-training and
-                                    agentic systems, particularly autonomous research agents.</p>
+                                    <p>My long-term goal is to build models that can learn beyond what human data can
+                                        teach. I’m currently working on an agentic system for post-training, leveraging
+                                        autonomous research agents and iterative harness optimization.</p>
 
-                                <p class="quote-note">
-                                    I’m always open to collaborations—feel free to reach out!
-                                </p>
-                            </blockquote>
+                                    <p class="about-note">I’m always open to collaborations—feel free to reach out!</p>
+
+                                    <ul class="about-tags">
+                                        <li>Reasoning</li>
+                                        <li>Self-Training</li>
+                                        <li>Agentic AI</li>
+                                    </ul>
+                                </div>
+                                <img class="about-portrait" src="./about_portrait.jpg"
+                                    alt="Portrait of Hyeonbin Hwang" width="512" height="512" loading="lazy" />
+                            </div>
+
+                            <h3 class="about-news-title">Recent</h3>
+                            <ul class="news-list">
+                                <li>
+                                    <span class="news-when">Sep 2026</span>
+                                    <span class="news-what">Joining <b>LG AI Research</b> (SuperIntelligence Lab) as a
+                                        research intern.</span>
+                                </li>
+                                <li>
+                                    <span class="news-when">Aug 2026</span>
+                                    <span class="news-what">Started my Ph.D. at <b>KAIST STAI Lab</b>, advised by
+                                        Seongjoon Oh.</span>
+                                </li>
+                                <li>
+                                    <span class="news-when">May 2026</span>
+                                    <span class="news-what"><b>Intrinsic Task Symmetry Drives Generalization in
+                                            Algorithmic Tasks</b> accepted to ICML 2026.</span>
+                                </li>
+                            </ul>
+
                             <div class="cta-row">
-                                <a class="btn" href="hb_cv_2026.pdf" target="_blank" rel="noopener">View CV</a>
+                                <a class="btn" href="hyeonbin_cv.pdf" target="_blank" rel="noopener">View CV</a>
                                 <a class="btn ghost" href="#publications">View Publications</a>
                             </div>
                         </div>
@@ -161,60 +189,65 @@
             <section id="experience" class="panel reveal hidden">
                 <div class="panel-inner">
                     <h3 class="section-title">Experience</h3>
-                    <ol class="exp-list">
-                        <li class="exp-entry" data-track="academia">
-                            <div class="exp-meta">
-                                <span class="exp-period">2024 — Now</span>
-                            </div>
-                            <div class="exp-body">
-                                <div class="exp-head">
-                                    <span class="exp-logo"><img src="https://www.google.com/s2/favicons?domain=kaist.ac.kr&sz=128" alt="KAIST logo" loading="lazy" /></span>
-                                    <h4 class="exp-org">KAIST AI</h4>
+                    <div class="exp-grid">
+                        <div class="exp-column">
+                            <h4 class="exp-column-title">Education</h4>
+                            <ol class="exp-list">
+                            <li class="exp-entry" data-track="academia">
+                                <span class="exp-period">2026 — Now</span>
+                                <div class="exp-body">
+                                    <h5 class="exp-org">KAIST STAI Lab</h5>
+                                    <p class="exp-role">Ph.D. · Graduate School of AI</p>
+                                    <p class="exp-detail">Advisor: <a href="https://seongjoonoh.com/" target="_blank" rel="noopener">Seongjoon Oh</a></p>
                                 </div>
-                                <p class="exp-role">M.S. · Language Model Reasoning</p>
-                                <p class="exp-detail">Advisor: Minjoon Seo</p>
-                            </div>
-                        </li>
-                        <li class="exp-entry" data-track="industry">
-                            <div class="exp-meta">
-                                <span class="exp-period">2025</span>
-                            </div>
-                            <div class="exp-body">
-                                <div class="exp-head">
-                                    <span class="exp-logo"><img src="https://www.google.com/s2/favicons?domain=krafton.com&sz=128" alt="KRAFTON logo" loading="lazy" /></span>
-                                    <h4 class="exp-org">KRAFTON</h4>
+                            </li>
+                            <li class="exp-entry" data-track="academia">
+                                <span class="exp-period">2024 — 2026</span>
+                                <div class="exp-body">
+                                    <h5 class="exp-org">KAIST AI</h5>
+                                    <p class="exp-role">M.S. · Graduate School of AI</p>
+                                    <p class="exp-detail">Advisor: <a href="https://scholar.google.com/citations?user=zYze5fIAAAAJ&hl=en" target="_blank" rel="noopener">Minjoon Seo</a></p>
                                 </div>
-                                <p class="exp-role">AI Companion Team · Internship</p>
-                                <p class="exp-detail"><a href="https://www.youtube.com/watch?v=wEKUSMqrbzQ" target="_blank" rel="noopener">Co-Playable Character — PUBG Ally</a></p>
-                            </div>
-                        </li>
-                        <li class="exp-entry" data-track="industry">
-                            <div class="exp-meta">
-                                <span class="exp-period">2022</span>
-                            </div>
-                            <div class="exp-body">
-                                <div class="exp-head">
-                                    <span class="exp-logo"><img src="https://www.google.com/s2/favicons?domain=navercorp.com&sz=128" alt="NAVER logo" loading="lazy" /></span>
-                                    <h4 class="exp-org">NAVER</h4>
-                                </div>
-                                <p class="exp-role">Healthcare AI · Internship</p>
-                                <p class="exp-detail">EHR summarization</p>
-                            </div>
-                        </li>
-                        <li class="exp-entry" data-track="academia">
-                            <div class="exp-meta">
+                            </li>
+                            <li class="exp-entry" data-track="academia">
                                 <span class="exp-period">2019 — 2024</span>
-                            </div>
-                            <div class="exp-body">
-                                <div class="exp-head">
-                                    <span class="exp-logo"><img src="https://www.google.com/s2/favicons?domain=kaist.ac.kr&sz=128" alt="KAIST logo" loading="lazy" /></span>
-                                    <h4 class="exp-org">KAIST SoC</h4>
+                                <div class="exp-body">
+                                    <h5 class="exp-org">KAIST</h5>
+                                    <p class="exp-role">B.S. · School of Computing</p>
+                                    <p class="exp-detail">GPA 3.96 / 4.3</p>
                                 </div>
-                                <p class="exp-role">B.S. in Computer Science</p>
-                                <p class="exp-detail">GPA 3.96 / 4.3</p>
-                            </div>
-                        </li>
-                    </ol>
+                            </li>
+                            </ol>
+                        </div>
+                        <div class="exp-column">
+                            <h4 class="exp-column-title">Internships</h4>
+                            <ol class="exp-list">
+                            <li class="exp-entry" data-track="industry">
+                                <span class="exp-period">2026 — </span>
+                                <div class="exp-body">
+                                    <h5 class="exp-org">LG AI Research</h5>
+                                    <p class="exp-role">SuperIntelligence Lab</p>
+                                </div>
+                            </li>
+                            <li class="exp-entry" data-track="industry">
+                                <span class="exp-period">2025</span>
+                                <div class="exp-body">
+                                    <h5 class="exp-org">KRAFTON</h5>
+                                    <p class="exp-role">AI Companion Team</p>
+                                    <p class="exp-detail"><a href="https://www.youtube.com/watch?v=wEKUSMqrbzQ" target="_blank" rel="noopener">Co-Playable Character — PUBG Ally</a></p>
+                                </div>
+                            </li>
+                            <li class="exp-entry" data-track="industry">
+                                <span class="exp-period">2022</span>
+                                <div class="exp-body">
+                                    <h5 class="exp-org">NAVER CLOVA</h5>
+                                    <p class="exp-role">Healthcare AI</p>
+                                    <p class="exp-detail">Medical text summarization &amp; embedding</p>
+                                </div>
+                            </li>
+                            </ol>
+                        </div>
+                    </div>
 
                     <div class="service-block">
                         <h4 class="service-title">Reviewer</h4>
@@ -276,7 +309,7 @@
                                             <span class="authors"><span class="me">H Hwang</span>, B Jeon, S Kim, J Kim,
                                                 H Chang, S Yang, S Won, D Lee, Y Ahn, ...</span>
                                             <span class="venue"><span class="venue-workshop">COLM 2025 RAM 2 Workshop
-                                                    (Oral)</span></span>
+                                                    <span class="pub-honor">Oral</span></span></span>
                                         </p>
                                         <div class="pub-actions">
                                             <a href="https://arxiv.org/abs/2505.22202" target="_blank" rel="noopener"
@@ -298,9 +331,9 @@
                                         <p class="pub-meta">
                                             <span class="authors"><span class="me">H Hwang</span>, D Kim, S Kim, S Ye, M
                                                 Seo</span>
-                                            <span class="venue"><span>EMNLP 2024 (Findings)</span><span class="venue-workshop">ACL
+                                            <span class="venue"><span>EMNLP 2024 Findings</span><span class="venue-workshop">ACL
                                                     2024 NLRSE
-                                                    Workshop (Oral)</span></span>
+                                                    Workshop <span class="pub-honor">Oral</span></span></span>
                                         </p>
                                         <div class="pub-actions">
                                             <a href="https://arxiv.org/abs/2404.10346" target="_blank" rel="noopener"
@@ -413,7 +446,7 @@
                                             <span class="authors">S Kim, J Suk, ... (others not shown), <span
                                                     class="me">H
                                                     Hwang</span>, ... M Seo</span>
-                                            <span class="venue"><span>NAACL 2025 (Best Paper)</span></span>
+                                            <span class="venue"><span>NAACL 2025 <span class="pub-honor">Best Paper</span></span></span>
                                         </p>
                                         <div class="pub-actions">
                                             <a href="https://arxiv.org/abs/2406.05761" target="_blank" rel="noopener"
@@ -430,9 +463,9 @@
                                             <span class="authors">J Kim, H Lee, H Cho, J Jang, <span class="me">H
                                                     Hwang</span>,
                                                 S Won, Y Ahn, D Lee, M Seo</span>
-                                            <span class="venue"><span>ICLR 2025 (Oral)</span><span class="venue-workshop">AAAI 2025
+                                            <span class="venue"><span>ICLR 2025 <span class="pub-honor">Oral</span></span><span class="venue-workshop">AAAI 2025
                                                     KnowFM Workshop
-                                                    (Best Paper)</span></span>
+                                                    <span class="pub-honor">Best Paper</span></span></span>
                                         </p>
                                         <div class="pub-actions">
                                             <a href="https://arxiv.org/abs/2410.01380" target="_blank" rel="noopener"
@@ -455,7 +488,7 @@
                                             <span class="authors">S Ye, D Kim, S Kim, <span class="me">H Hwang</span>, S
                                                 Kim, Y
                                                 Jo, J Thorne, J Kim, M Seo</span>
-                                            <span class="venue"><span>ICLR 2024 (Spotlight)</span></span>
+                                            <span class="venue"><span>ICLR 2024 <span class="pub-honor">Spotlight</span></span></span>
                                         </p>
                                         <div class="pub-actions">
                                             <a href="https://arxiv.org/abs/2307.10928" target="_blank" rel="noopener"
