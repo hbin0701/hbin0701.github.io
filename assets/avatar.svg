@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" shape-rendering="crispEdges">
+<!-- Dark fringe, warm skin, and a beige checked overshirt. -->
+<path fill="#353b34" d="M23 3h17v2h7v3h4v5h3v17h-2v7h-6v5h-5v5h7v3h7v3h4v11H5V53h4v-3h7v-3h8v-5h-5v-5h-6v-8h-2V14h3V9h3V6h6z"/>
+<path fill="#252724" d="M22 6h18v2h7v4h3v18h-3v6H16v-6h-2V15h3v-5h5z"/>
+<path fill="#373936" d="M22 8h5v4h-5zm9-2h4v7h-4zm7 3h5v5h-5zm-19 6h4v6h-4zm26 1h3v9h-3z"/>
+<path fill="#c88e6c" d="M16 26h5v10h-4v-3h-1zm28 0h5v8h-2v3h-4z"/>
+<path fill="#e8b38d" d="M22 18h19v3h4v17h-3v5h-5v3H27v-3h-5v-5h-2V24h2z"/>
+<path fill="#f0c29e" d="M25 21h13v3h4v11h-3v6H26v-3h-3V25h2z"/>
+<path fill="#272925" d="M20 14h23v9h-4v-4h-3v7h-4v-6h-3v5h-3v-4h-3v7h-3z"/>
+<path fill="#45433a" d="M24 27h5v1h-5zm12 0h5v1h-5z"/>
+<path fill="#3c3027" d="M25 29h4v2h-4zm11 0h4v2h-4z"/>
+<path fill="#fff4df" d="M25 29h1v1h-1zm11 0h1v1h-1z"/>
+<path fill="#ce956f" d="M32 30h2v6h3v1h-6v-2h1z"/>
+<path fill="#a5725c" d="M29 39h8v1h-8z"/>
+<path fill="#e7af8b" d="M26 44h12v7H26z"/>
+<path fill="#f7f4e9" d="M22 49h21v15H22z"/>
+<path fill="#e3dfd1" d="M26 49h12v2H26zm2 2h8v1h-8z"/>
+<path fill="#ded2b9" d="M16 49h9v15H8V55h3v-3h5zm23 0h9v3h5v3h3v9H39z"/>
+<path fill="#f4eddd" d="M18 48h7v6h-3v5h-4zm21 0h7v11h-4v-5h-3z"/>
+<path fill="#b7b7aa" d="M11 54h3v10h-3zm8 4h3v6h-3zm23 0h3v6h-3zm8-4h3v10h-3z"/>
+<path fill="#bca891" d="M9 56h9v2H9zm13 0h3v2h-3zm17 0h3v2h-3zm7 0h8v2h-8zM8 62h17v2H8zm31 0h17v2H39z"/>
+<path fill="#f8f4e8" d="M15 59h3v3h-3zm31 0h3v3h-3z"/>
+</svg>
