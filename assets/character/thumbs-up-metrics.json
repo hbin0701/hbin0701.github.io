@@ -1,0 +1,85 @@
+[
+  {
+    "name": "thumbs-up",
+    "kind": "animation",
+    "frames": [
+      {
+        "source": {
+          "left": 258,
+          "top": 19,
+          "right": 553,
+          "bottom": 603,
+          "cx": 425.5
+        },
+        "scale": 0.2876712328767123,
+        "dx": -58,
+        "dy": 11,
+        "packed": {
+          "left": 16,
+          "top": 16,
+          "right": 101,
+          "bottom": 184,
+          "cx": 64.5
+        }
+      },
+      {
+        "source": {
+          "left": 79,
+          "top": 19,
+          "right": 373,
+          "bottom": 603,
+          "cx": 246.5
+        },
+        "scale": 0.2876712328767123,
+        "dx": -7,
+        "dy": 11,
+        "packed": {
+          "left": 16,
+          "top": 16,
+          "right": 100,
+          "bottom": 184,
+          "cx": 64
+        }
+      },
+      {
+        "source": {
+          "left": 259,
+          "top": 17,
+          "right": 556,
+          "bottom": 598,
+          "cx": 425
+        },
+        "scale": 0.2891566265060241,
+        "dx": -59,
+        "dy": 11,
+        "packed": {
+          "left": 16,
+          "top": 16,
+          "right": 102,
+          "bottom": 184,
+          "cx": 63.5
+        }
+      },
+      {
+        "source": {
+          "left": 79,
+          "top": 17,
+          "right": 371,
+          "bottom": 599,
+          "cx": 246.5
+        },
+        "scale": 0.28865979381443296,
+        "dx": -7,
+        "dy": 11,
+        "packed": {
+          "left": 16,
+          "top": 16,
+          "right": 100,
+          "bottom": 184,
+          "cx": 64
+        }
+      }
+    ],
+    "asset": "assets/character/thumbs-up.png"
+  }
+]

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" data-mode="doc">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Character animations — Hyeonbin Hwang</title>
+  <link rel="stylesheet" href="styles.css?v=20261014-system-cursors">
+  <script src="character.js?v=20261015-three-emotes" defer></script>
+  <style>
+    body { background:#cad9bf; }
+    .studio { max-width:1060px; margin:0 auto; padding:38px 24px; }
+    .studio-header { display:flex; align-items:flex-start; justify-content:space-between; gap:24px; margin:28px 0; }
+    .studio h1 { margin:0 0 10px; font-size:32px; letter-spacing:-.04em; }
+    .studio p { margin:0; color:var(--muted); line-height:1.6; }
+    .studio a { text-decoration:underline; text-underline-offset:3px; }
+    .studio button { flex:none; padding:10px 14px; border:1px solid var(--ink); border-radius:3px; background:var(--paper); }
+    .animation-grid { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:14px; }
+    .animation-card { padding:14px 8px 18px; border:1px solid #73876b; border-radius:5px; background:var(--paper); text-align:center; }
+    .animation-card h2 { margin:0; font:600 13px var(--sans); }
+    .animation-card p { margin-top:6px; font:11px var(--mono); }
+    .preview-stage { height:215px; display:grid; place-items:center; }
+    @media(max-width:800px) { .animation-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+    @media(max-width:520px) { .studio { padding:24px 14px; } .studio-header { flex-direction:column; } .animation-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+  </style>
+</head>
+<body>
+  <main class="studio">
+    <a href="index.html">← Back to the website</a>
+    <header class="studio-header">
+      <div><h1>A little more personality.</h1><p>Three emotes and a blink, with a still pose between them.<br>Hover any character for a random emote.</p></div>
+      <button id="pause-motion" type="button" aria-pressed="false">Pause animations</button>
+    </header>
+    <div class="animation-grid" id="animation-grid"></div>
+  </main>
+  <script>
+    const previews = [
+      ['blink','Blink','A quick eye close'], ['wave','Hello','A friendly wave'],
+      ['tilt','Head tilt','Curious'], ['thumbs-up','Two thumbs up','Looking good!'],
+    ];
+    document.getElementById('animation-grid').innerHTML = previews.map(([name,label,description]) =>
+      `<section class="animation-card"><h2>${label}</h2><div class="preview-stage"><span class="about-figure" data-character data-preview-action="${name}" aria-hidden="true"><img class="character-fallback" src="assets/character.png" alt="" width="1254" height="1254"><canvas class="character-canvas" width="128" height="192"></canvas></span></div><p>${description}</p></section>`
+    ).join('');
+    document.getElementById('pause-motion').addEventListener('click', event => {
+      const paused = document.documentElement.dataset.motion !== 'paused';
+      document.documentElement.dataset.motion = paused ? 'paused' : 'active';
+      event.currentTarget.setAttribute('aria-pressed', String(paused));
+      event.currentTarget.textContent = paused ? 'Resume animations' : 'Pause animations';
+    });
+  </script>
+</body>
+</html>

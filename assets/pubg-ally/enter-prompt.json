@@ -1,0 +1,9 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "asset": "assets/pubg-ally/enter.png",
+  "references": [
+    "assets/character.png",
+    "assets/pubg-ally/equip-v2.png"
+  ],
+  "prompt": "Use case: identity-preserve. Attached image 1 is the exact main character identity and pixel style. Attached image 2 is the gray PUBG-style helmet reference. Create a four-frame RUNNING-IN animation for the main character BEFORE putting on the helmet: bareheaded with his original messy dark hair and friendly face visible, original white shirt with small gray emblem, black backpack straps, gray pants and white shoes. Runs toward VIEWER'S RIGHT in a three-quarter side view. Holds the gray game helmet securely low near his hip with one hand while the other arm swings naturally; helmet must stay OFF his head in all frames. No rifle yet. ONE square truly transparent PNG in a strict 2 by 2 grid of equal cells. One full-body figure per cell, identical body scale and ground baseline, at least8% clean transparent margins, no figure crosses a cell edge. Frame1: full running stride, one foot forward and opposite foot back. Frame2: passing step with bent knees under body. Frame3: opposite running stride, legs alternate correctly. Frame4: second passing step. Slight natural forward lean, modest arm motion, helmet carried consistently. Crisp blocky pixel art matching reference, same proportions, colors and shading. No text, grid lines, background, shadows, detached pixels, fragments, extra characters or muzzle flashes. Character height about78% of cell, horizontally centered, feet at90%."
+}

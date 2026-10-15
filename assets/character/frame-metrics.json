@@ -1,0 +1,849 @@
+[
+  {
+    "name": "idle",
+    "kind": "still",
+    "frames": [
+      {
+        "source": {
+          "left": 337,
+          "top": 73,
+          "right": 878,
+          "bottom": 1200,
+          "cx": 647
+        },
+        "scale": 0.14906832298136646,
+        "dx": -32,
+        "dy": 5,
+        "packed": {
+          "left": 18,
+          "top": 16,
+          "right": 99,
+          "bottom": 184,
+          "cx": 64.5
+        }
+      }
+    ],
+    "asset": "assets/character/idle.png"
+  },
+  {
+    "name": "wave",
+    "kind": "animation",
+    "frames": [
+      {
+        "source": {
+          "left": 202,
+          "top": 47,
+          "right": 467,
+          "bottom": 602,
+          "cx": 350
+        },
+        "scale": 0.3027027027027027,
+        "dx": -42,
+        "dy": 2,
+        "packed": {
+          "left": 19,
+          "top": 16,
+          "right": 100,
+          "bottom": 184,
+          "cx": 64
+        }
+      },
+      {
+        "source": {
+          "left": 168,
+          "top": 47,
+          "right": 435,
+          "bottom": 602,
+          "cx": 321
+        },
+        "scale": 0.3027027027027027,
+        "dx": -33,
+        "dy": 2,
+        "packed": {
+          "left": 18,
+          "top": 16,
+          "right": 99,
+          "bottom": 184,
+          "cx": 64
+        }
+      },
+      {
+        "source": {
+          "left": 177,
+          "top": 17,
+          "right": 476,
+          "bottom": 578,
+          "cx": 356.5
+        },
+        "scale": 0.2994652406417112,
+        "dx": -43,
+        "dy": 11,
+        "packed": {
+          "left": 10,
+          "top": 16,
+          "right": 100,
+          "bottom": 184,
+          "cx": 64
+        }
+      },
+      {
+        "source": {
+          "left": 167,
+          "top": 16,
+          "right": 438,
+          "bottom": 578,
+          "cx": 322.5
+        },
+        "scale": 0.298932384341637,
+        "dx": -32,
+        "dy": 12,
+        "packed": {
+          "left": 18,
+          "top": 17,
+          "right": 99,
+          "bottom": 184,
+          "cx": 64
+        }
+      }
+    ],
+    "asset": "assets/character/wave.png"
+  },
+  {
+    "name": "walk",
+    "kind": "animation",
+    "frames": [
+      {
+        "source": {
+          "left": 230,
+          "top": 56,
+          "right": 513,
+          "bottom": 608,
+          "cx": 394.5
+        },
+        "scale": 0.30434782608695654,
+        "dx": -56,
+        "dy": -1,
+        "packed": {
+          "left": 14,
+          "top": 16,
+          "right": 100,
+          "bottom": 184,
+          "cx": 64
+        }
+      },
+      {
+        "source": {
+          "left": 113,
+          "top": 56,
+          "right": 396,
+          "bottom": 608,
+          "cx": 270.5
+        },
+        "scale": 0.30434782608695654,
+        "dx": -18,
+        "dy": -1,
+        "packed": {
+          "left": 17,
+          "top": 16,
+          "right": 103,
+          "bottom": 184,
+          "cx": 64
+        }
+      },
+      {
+        "source": {
+          "left": 231,
+          "top": 15,
+          "right": 515,
+          "bottom": 571,
+          "cx": 369.5
+        },
+        "scale": 0.302158273381295,
+        "dx": -48,
+        "dy": 12,
+        "packed": {
+          "left": 22,
+          "top": 17,
+          "right": 107,
+          "bottom": 184,
+          "cx": 63.5
+        }
+      },
+      {
+        "source": {
+          "left": 113,
+          "top": 15,
+          "right": 398,
+          "bottom": 577,
+          "cx": 271
+        },
+        "scale": 0.298932384341637,
+        "dx": -17,
+        "dy": 12,
+        "packed": {
+          "left": 17,
+          "top": 16,
+          "right": 102,
+          "bottom": 184,
+          "cx": 63.5
+        }
+      }
+    ],
+    "asset": "assets/character/walk.png"
+  },
+  {
+    "name": "nod",
+    "kind": "animation",
+    "frames": [
+      {
+        "source": {
+          "left": 201,
+          "top": 55,
+          "right": 479,
+          "bottom": 618,
+          "cx": 359
+        },
+        "scale": 0.2984014209591474,
+        "dx": -43,
+        "dy": 0,
+        "packed": {
+          "left": 17,
+          "top": 16,
+          "right": 100,
+          "bottom": 184,
+          "cx": 64.5
+        }
+      },
+      {
+        "source": {
+          "left": 125,
+          "top": 77,
+          "right": 417,
+          "bottom": 618,
+          "cx": 291
+        },
+        "scale": 0.2984014209591474,
+        "dx": -23,
+        "dy": 0,
+        "packed": {
+          "left": 15,
+          "top": 23,
+          "right": 101,
+          "bottom": 184,
+          "cx": 64
+        }
+      },
+      {
+        "source": {
+          "left": 200,
+          "top": 56,
+          "right": 496,
+          "bottom": 592,
+          "cx": 368
+        },
+        "scale": 0.2984014209591474,
+        "dx": -46,
+        "dy": 7,
+        "packed": {
+          "left": 14,
+          "top": 24,
+          "right": 102,
+          "bottom": 184,
+          "cx": 64
+        }
+      },
+      {
+        "source": {
+          "left": 133,
+          "top": 36,
+          "right": 423,
+          "bottom": 592,
+          "cx": 295.5
+        },
+        "scale": 0.2984014209591474,
+        "dx": -24,
+        "dy": 7,
+        "packed": {
+          "left": 16,
+          "top": 18,
+          "right": 102,
+          "bottom": 184,
+          "cx": 64
+        }
+      }
+    ],
+    "asset": "assets/character/nod.png"
+  },
+  {
+    "name": "tilt",
+    "kind": "animation",
+    "frames": [
+      {
+        "source": {
+          "left": 233,
+          "top": 30,
+          "right": 500,
+          "bottom": 589,
+          "cx": 382
+        },
+        "scale": 0.3005366726296959,
+        "dx": -51,
+        "dy": 7,
+        "packed": {
+          "left": 19,
+          "top": 16,
+          "right": 99,
+          "bottom": 184,
+          "cx": 63.5
+        }
+      },
+      {
+        "source": {
+          "left": 133,
+          "top": 32,
+          "right": 408,
+          "bottom": 589,
+          "cx": 270.5
+        },
+        "scale": 0.3005366726296959,
+        "dx": -17,
+        "dy": 7,
+        "packed": {
+          "left": 23,
+          "top": 17,
+          "right": 105,
+          "bottom": 184,
+          "cx": 64
+        }
+      },
+      {
+        "source": {
+          "left": 246,
+          "top": 21,
+          "right": 528,
+          "bottom": 577,
+          "cx": 377.5
+        },
+        "scale": 0.3005366726296959,
+        "dx": -49,
+        "dy": 11,
+        "packed": {
+          "left": 25,
+          "top": 18,
+          "right": 109,
+          "bottom": 184,
+          "cx": 64
+        }
+      },
+      {
+        "source": {
+          "left": 133,
+          "top": 20,
+          "right": 408,
+          "bottom": 577,
+          "cx": 271
+        },
+        "scale": 0.3005366726296959,
+        "dx": -17,
+        "dy": 11,
+        "packed": {
+          "left": 23,
+          "top": 17,
+          "right": 105,
+          "bottom": 184,
+          "cx": 64.5
+        }
+      }
+    ],
+    "asset": "assets/character/tilt.png"
+  },
+  {
+    "name": "look-left",
+    "kind": "animation",
+    "frames": [
+      {
+        "source": {
+          "left": 213,
+          "top": 60,
+          "right": 493,
+          "bottom": 619,
+          "cx": 371.5
+        },
+        "scale": 0.3005366726296959,
+        "dx": -48,
+        "dy": -2,
+        "packed": {
+          "left": 16,
+          "top": 16,
+          "right": 100,
+          "bottom": 184,
+          "cx": 63
+        }
+      },
+      {
+        "source": {
+          "left": 136,
+          "top": 61,
+          "right": 417,
+          "bottom": 619,
+          "cx": 293.5
+        },
+        "scale": 0.3010752688172043,
+        "dx": -24,
+        "dy": -3,
+        "packed": {
+          "left": 17,
+          "top": 15,
+          "right": 102,
+          "bottom": 184,
+          "cx": 64.5
+        }
+      },
+      {
+        "source": {
+          "left": 204,
+          "top": 35,
+          "right": 504,
+          "bottom": 593,
+          "cx": 370
+        },
+        "scale": 0.3010752688172043,
+        "dx": -47,
+        "dy": 5,
+        "packed": {
+          "left": 15,
+          "top": 16,
+          "right": 105,
+          "bottom": 184,
+          "cx": 64.5
+        }
+      },
+      {
+        "source": {
+          "left": 131,
+          "top": 35,
+          "right": 416,
+          "bottom": 593,
+          "cx": 292
+        },
+        "scale": 0.3010752688172043,
+        "dx": -24,
+        "dy": 5,
+        "packed": {
+          "left": 15,
+          "top": 16,
+          "right": 101,
+          "bottom": 184,
+          "cx": 64
+        }
+      }
+    ],
+    "asset": "assets/character/look-left.png"
+  },
+  {
+    "name": "look-right",
+    "kind": "animation",
+    "frames": [
+      {
+        "source": {
+          "left": 225,
+          "top": 40,
+          "right": 500,
+          "bottom": 606,
+          "cx": 377
+        },
+        "scale": 0.2968197879858657,
+        "dx": -48,
+        "dy": 4,
+        "packed": {
+          "left": 19,
+          "top": 16,
+          "right": 100,
+          "bottom": 184,
+          "cx": 63.5
+        }
+      },
+      {
+        "source": {
+          "left": 120,
+          "top": 42,
+          "right": 415,
+          "bottom": 606,
+          "cx": 282.5
+        },
+        "scale": 0.2978723404255319,
+        "dx": -20,
+        "dy": 3,
+        "packed": {
+          "left": 16,
+          "top": 16,
+          "right": 104,
+          "bottom": 184,
+          "cx": 64
+        }
+      },
+      {
+        "source": {
+          "left": 216,
+          "top": 21,
+          "right": 520,
+          "bottom": 588,
+          "cx": 375
+        },
+        "scale": 0.2962962962962963,
+        "dx": -47,
+        "dy": 10,
+        "packed": {
+          "left": 17,
+          "top": 16,
+          "right": 107,
+          "bottom": 184,
+          "cx": 64
+        }
+      },
+      {
+        "source": {
+          "left": 125,
+          "top": 26,
+          "right": 418,
+          "bottom": 588,
+          "cx": 283
+        },
+        "scale": 0.298932384341637,
+        "dx": -21,
+        "dy": 9,
+        "packed": {
+          "left": 16,
+          "top": 17,
+          "right": 104,
+          "bottom": 184,
+          "cx": 63
+        }
+      }
+    ],
+    "asset": "assets/character/look-right.png"
+  },
+  {
+    "name": "shrug",
+    "kind": "animation",
+    "frames": [
+      {
+        "source": {
+          "left": 217,
+          "top": 38,
+          "right": 483,
+          "bottom": 593,
+          "cx": 370
+        },
+        "scale": 0.3027027027027027,
+        "dx": -48,
+        "dy": 4,
+        "packed": {
+          "left": 18,
+          "top": 16,
+          "right": 98,
+          "bottom": 184,
+          "cx": 64
+        }
+      },
+      {
+        "source": {
+          "left": 139,
+          "top": 38,
+          "right": 405,
+          "bottom": 593,
+          "cx": 292
+        },
+        "scale": 0.3027027027027027,
+        "dx": -24,
+        "dy": 4,
+        "packed": {
+          "left": 18,
+          "top": 16,
+          "right": 99,
+          "bottom": 184,
+          "cx": 64.5
+        }
+      },
+      {
+        "source": {
+          "left": 179,
+          "top": 26,
+          "right": 548,
+          "bottom": 581,
+          "cx": 369
+        },
+        "scale": 0.3027027027027027,
+        "dx": -48,
+        "dy": 8,
+        "packed": {
+          "left": 6,
+          "top": 16,
+          "right": 118,
+          "bottom": 184,
+          "cx": 64
+        }
+      },
+      {
+        "source": {
+          "left": 116,
+          "top": 26,
+          "right": 456,
+          "bottom": 581,
+          "cx": 291
+        },
+        "scale": 0.3027027027027027,
+        "dx": -24,
+        "dy": 8,
+        "packed": {
+          "left": 11,
+          "top": 16,
+          "right": 114,
+          "bottom": 184,
+          "cx": 64
+        }
+      }
+    ],
+    "asset": "assets/character/shrug.png"
+  },
+  {
+    "name": "backpack",
+    "kind": "animation",
+    "frames": [
+      {
+        "source": {
+          "left": 225,
+          "top": 20,
+          "right": 517,
+          "bottom": 608,
+          "cx": 387
+        },
+        "scale": 0.2857142857142857,
+        "dx": -47,
+        "dy": 10,
+        "packed": {
+          "left": 17,
+          "top": 16,
+          "right": 101,
+          "bottom": 184,
+          "cx": 63.5
+        }
+      },
+      {
+        "source": {
+          "left": 111,
+          "top": 20,
+          "right": 405,
+          "bottom": 608,
+          "cx": 276
+        },
+        "scale": 0.2857142857142857,
+        "dx": -15,
+        "dy": 10,
+        "packed": {
+          "left": 17,
+          "top": 16,
+          "right": 101,
+          "bottom": 184,
+          "cx": 63.5
+        }
+      },
+      {
+        "source": {
+          "left": 225,
+          "top": 14,
+          "right": 525,
+          "bottom": 597,
+          "cx": 387
+        },
+        "scale": 0.2881646655231561,
+        "dx": -48,
+        "dy": 12,
+        "packed": {
+          "left": 17,
+          "top": 16,
+          "right": 104,
+          "bottom": 184,
+          "cx": 64
+        }
+      },
+      {
+        "source": {
+          "left": 111,
+          "top": 14,
+          "right": 405,
+          "bottom": 597,
+          "cx": 276
+        },
+        "scale": 0.2881646655231561,
+        "dx": -16,
+        "dy": 12,
+        "packed": {
+          "left": 16,
+          "top": 16,
+          "right": 101,
+          "bottom": 184,
+          "cx": 64
+        }
+      }
+    ],
+    "asset": "assets/character/backpack.png"
+  },
+  {
+    "name": "celebrate",
+    "kind": "animation",
+    "frames": [
+      {
+        "source": {
+          "left": 213,
+          "top": 47,
+          "right": 500,
+          "bottom": 611,
+          "cx": 377
+        },
+        "scale": 0.2978723404255319,
+        "dx": -48,
+        "dy": 2,
+        "packed": {
+          "left": 16,
+          "top": 16,
+          "right": 101,
+          "bottom": 184,
+          "cx": 64.5
+        }
+      },
+      {
+        "source": {
+          "left": 135,
+          "top": 47,
+          "right": 421,
+          "bottom": 611,
+          "cx": 299
+        },
+        "scale": 0.2978723404255319,
+        "dx": -25,
+        "dy": 2,
+        "packed": {
+          "left": 15,
+          "top": 16,
+          "right": 101,
+          "bottom": 184,
+          "cx": 64
+        }
+      },
+      {
+        "source": {
+          "left": 213,
+          "top": 16,
+          "right": 528,
+          "bottom": 582,
+          "cx": 377
+        },
+        "scale": 0.2968197879858657,
+        "dx": -48,
+        "dy": 11,
+        "packed": {
+          "left": 15,
+          "top": 16,
+          "right": 109,
+          "bottom": 184,
+          "cx": 64
+        }
+      },
+      {
+        "source": {
+          "left": 135,
+          "top": 17,
+          "right": 421,
+          "bottom": 582,
+          "cx": 299
+        },
+        "scale": 0.2973451327433628,
+        "dx": -25,
+        "dy": 11,
+        "packed": {
+          "left": 15,
+          "top": 16,
+          "right": 100,
+          "bottom": 184,
+          "cx": 64
+        }
+      }
+    ],
+    "asset": "assets/character/celebrate.png"
+  },
+  {
+    "name": "arrow",
+    "kind": "cursor",
+    "hotspot": {
+      "x": 6,
+      "y": 2
+    },
+    "bounds": {
+      "left": 125,
+      "top": 95,
+      "right": 954,
+      "bottom": 1287,
+      "cx": 497.5
+    },
+    "asset": "assets/cursors/arrow.png"
+  },
+  {
+    "name": "pointer",
+    "kind": "cursor",
+    "hotspot": {
+      "x": 13,
+      "y": 2
+    },
+    "bounds": {
+      "left": 181,
+      "top": 65,
+      "right": 1025,
+      "bottom": 1189,
+      "cx": 673
+    },
+    "asset": "assets/cursors/pointer.png"
+  },
+  {
+    "name": "wave",
+    "kind": "cursor",
+    "hotspot": {
+      "x": 16,
+      "y": 2
+    },
+    "bounds": {
+      "left": 106,
+      "top": 61,
+      "right": 1147,
+      "bottom": 1205,
+      "cx": 661.5
+    },
+    "asset": "assets/cursors/wave.png"
+  },
+  {
+    "name": "blink",
+    "kind": "still",
+    "frames": [
+      {
+        "source": {
+          "left": 336,
+          "top": 73,
+          "right": 879,
+          "bottom": 1201,
+          "cx": 647
+        },
+        "scale": 0.14906832298136646,
+        "dx": -32,
+        "dy": 5,
+        "packed": {
+          "left": 18,
+          "top": 16,
+          "right": 99,
+          "bottom": 184,
+          "cx": 64.5
+        }
+      }
+    ],
+    "asset": "assets/character/blink.png"
+  }
+]

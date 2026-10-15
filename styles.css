@@ -6,7 +6,7 @@ body { margin:0; color:var(--ink); background:var(--desktop); font-family:var(--
 body.is-dragging { user-select:none; cursor:grabbing; }
 button,input,select { font:inherit; color:inherit; }
 button,a,input,select,summary { -webkit-tap-highlight-color:transparent; }
-button,select,summary { cursor:pointer; }
+button,select,summary { cursor:var(--game-pointer, pointer); }
 button { border-radius:0; }
 a { color:inherit; text-decoration:none; }
 a:hover { color:var(--green); }
@@ -97,6 +97,9 @@ h1 { font-size:clamp(28px,2.8vw,40px); line-height:1.12; margin:0 0 10px; letter
 .library-filters select { font-size:12px; border:0; background:transparent; max-width:96px; }
 .paper { padding:22px; border-bottom:1px solid var(--line); }
 .paper:last-child { border:0; }
+.paper-pubg-ally { position:relative; overflow:hidden; isolation:isolate; }
+.pubg-ally-canvas { position:absolute; inset:0; width:100%; height:100%; z-index:1; pointer-events:none; image-rendering:pixelated; }
+.paper-pubg-ally.is-duo-playing { background:#f4f4e7; }
 .paper-heading { display:flex; gap:12px; align-items:start; }
 .paper-icon { width:33px; height:33px; flex-shrink:0; margin-top:14px; image-rendering:pixelated; }
 .paper-icon.tone-1 { filter:hue-rotate(30deg); }
@@ -277,8 +280,17 @@ html[data-mode='doc'] .about-header { display:flex; align-items:flex-end; justif
 html[data-mode='doc'] .about-title { min-width:0; }
 html[data-mode='doc'] .about-header .about-role { margin:0; }
 /* Crop the padded 1254px canvas to the figure (x 336–878, y 72–1200) so the feet sit on the role line. */
-html[data-mode='doc'] .about-figure { position:relative; flex:none; height:168px; aspect-ratio:543/1129; overflow:hidden; }
-html[data-mode='doc'] .about-figure img { position:absolute; width:230.94%; height:111.07%; max-width:none; left:-61.88%; top:-6.38%; }
+.character-companion { position:relative; display:inline-flex; flex:none; }
+.character-hover-hint { position:absolute; right:calc(100% + 9px); top:24px; white-space:nowrap; font:10px var(--mono); color:#858c7d; pointer-events:none; }
+.character-hover-hint span { display:inline-block; margin-left:2px; font-size:13px; }
+.character-companion:hover .character-hover-hint { opacity:.5; }
+@media (hover:none),(prefers-reduced-motion:reduce) { .character-hover-hint { display:none; } }
+@media (max-width:900px) { .character-hover-hint { top:2px; font-size:9px; right:calc(100% + 6px); } }
+html[data-mode='doc'] .about-figure { position:relative; flex:none; height:168px; aspect-ratio:543/1129; overflow:clip; overflow-clip-margin:20px; }
+html[data-mode='doc'] .about-figure .character-fallback { position:absolute; width:230.94%; height:111.07%; max-width:none; left:-61.88%; top:-6.38%; image-rendering:pixelated; pointer-events:none; }
+.character-canvas { display:none; position:absolute; height:114.2857%; width:auto; max-width:none; left:50%; top:-9.5238%; transform:translateX(-50%); image-rendering:pixelated; pointer-events:none; }
+.about-figure.is-ready .character-canvas { display:block; }
+.about-figure.is-ready .character-fallback { display:none; }
 html[data-mode='doc'] .about-role { font-size:13px; }
 html[data-mode='doc'] .interest-tags li,html[data-mode='doc'] .about-socials a { font-size:12px; }
 html[data-mode='doc'] .library-tools { padding:14px 40px 16px; }
@@ -295,6 +307,18 @@ html[data-mode='doc'] .contact-body > p:not(.eyebrow) { max-width:none; font-siz
 html[data-mode='doc'] .email-row { max-width:440px; font-size:13px; }
 html[data-mode='doc'] .contact-links { font-size:12px; }
 html[data-mode='doc'] .desktop-footer { font-size:11px; }
+/* Native pixel cursors keep an exact hotspot; hover adds a small golden sparkle. */
+@media (hover:hover) and (pointer:fine) {
+  :root { --game-arrow:url("assets/cursors/game/arrow.svg?v=24") 2 2, default; --game-pointer:url("assets/cursors/game/hover-0.svg?v=24") 2 2, pointer; }
+  body { cursor:var(--game-arrow); }
+  a,button,select,summary,[role='button'] { cursor:var(--game-pointer, pointer); }
+  input,textarea,[contenteditable='true'] { cursor:text; }
+  input[type='checkbox'],input[type='radio'],input[type='button'],input[type='submit'],input[type='range'] { cursor:var(--game-pointer, pointer); }
+  html[data-mode='doc'] .about-figure { cursor:var(--game-pointer, pointer); }
+  html[data-mode='desktop'] .window-bar { cursor:grab; }
+  html[data-mode='doc'] .window-bar,html[data-mode='desktop'] .is-maximized .window-bar,button:disabled { cursor:var(--game-arrow); }
+  body.is-dragging,body.is-dragging * { cursor:grabbing !important; }
+}
 @media (max-width:900px) {
   html[data-mode='doc'] .desktop { padding:20px 12px 40px; }
   html[data-mode='doc'] .desktop-window { scroll-margin-top:110px; }

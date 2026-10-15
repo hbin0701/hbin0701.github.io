@@ -1,0 +1,93 @@
+[
+  {
+    "name": "enter",
+    "kind": "animation",
+    "frames": [
+      {
+        "source": {
+          "left": 161,
+          "right": 529,
+          "top": 66,
+          "bottom": 620,
+          "count": 122372,
+          "cx": 338
+        },
+        "scale": 0.30324909747292417,
+        "dx": -6,
+        "dy": 28,
+        "packed": {
+          "left": 43,
+          "right": 154,
+          "top": 48,
+          "bottom": 216,
+          "count": 11258,
+          "cx": 96.5
+        }
+      },
+      {
+        "source": {
+          "left": 112,
+          "right": 466,
+          "top": 94,
+          "bottom": 619,
+          "count": 110888,
+          "cx": 258.5
+        },
+        "scale": 0.30324909747292417,
+        "dx": 18,
+        "dy": 28,
+        "packed": {
+          "left": 52,
+          "right": 159,
+          "top": 57,
+          "bottom": 216,
+          "count": 10213,
+          "cx": 95.5
+        }
+      },
+      {
+        "source": {
+          "left": 153,
+          "right": 536,
+          "top": 42,
+          "bottom": 580,
+          "count": 118643,
+          "cx": 333.5
+        },
+        "scale": 0.30324909747292417,
+        "dx": -5,
+        "dy": 40,
+        "packed": {
+          "left": 41,
+          "right": 158,
+          "top": 53,
+          "bottom": 216,
+          "count": 10928,
+          "cx": 96.5
+        }
+      },
+      {
+        "source": {
+          "left": 115,
+          "right": 468,
+          "top": 65,
+          "bottom": 576,
+          "count": 108673,
+          "cx": 262
+        },
+        "scale": 0.30324909747292417,
+        "dx": 17,
+        "dy": 41,
+        "packed": {
+          "left": 52,
+          "right": 159,
+          "top": 61,
+          "bottom": 216,
+          "count": 9998,
+          "cx": 96.5
+        }
+      }
+    ],
+    "asset": "assets/pubg-ally/enter.png"
+  }
+]

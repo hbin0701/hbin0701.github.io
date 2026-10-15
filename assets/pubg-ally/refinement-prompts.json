@@ -1,0 +1,19 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "assets": [
+    {
+      "file": "assets/pubg-ally/equip-v2.png",
+      "prompt": "Use case: identity-preserve. Edit reference: attached helmeted main-character shooting sprite sheet. Create a REFINED HELMET-EQUIP animation for this exact character, helmet, head angle, body proportions and outfit. ONE square transparent PNG, strict 2 by 2 equal square cells. One complete figure in each cell with at least 8% EMPTY transparent margin on every side; no figure or pixels may cross cell boundaries. Same foot baseline at 90% of each cell and same body/head scale in every cell. Read top-left, top-right, bottom-left, bottom-right. Frame1: helmet held just above head with both hands, hair exposed, smiling face turned slightly toward viewer's RIGHT just as in the reference. Frame2: same helmet lowering halfway onto the head. Frame3: helmet fully on, hands lowering from the sides, head and shoulders exactly in reference position. Frame4: helmet on and the same gray game rifle held at low-ready, pointed toward viewer's RIGHT. Keep legs already in the same slightly wide standing stance as reference shooting pose, so there is no sudden stance change between equip and aim. Preserve white shirt and gray emblem, dark backpack, gray trousers, white shoes, original chibi pixel style. No muzzle flash, no text, no scene, no extra objects. VERY IMPORTANT: absolutely clean transparent gutters and edges, no detached stray pixels, no fragments of neighboring cells, no faint colored specks. Crisp solid pixels, no antialiasing, identical helmet design as reference."
+    },
+    {
+      "file": "assets/pubg-ally/aim-v2.png",
+      "prompt": "Use case: identity-preserve. Edit target/reference: attached shooting sprite sheet. Create a four-frame RAISE-RIFLE-TO-AIM transition for this EXACT same smiling helmeted character. One square truly transparent PNG in strict 2 by 2 equal cells, order top-left, top-right, bottom-left, bottom-right. Same helmet, three-quarter head angle looking VIEWER'S RIGHT, head position, wide planted stance, body scale, white shirt and gray emblem, gray pants, white sneakers, dark backpack, and exact rifle in EVERY frame. Frame1: rifle held low-ready pointing down-right across chest. Frame2: both hands lift rifle halfway up, barrel points slightly down-right. Frame3: stock settles against shoulder, barrel nearly horizontal. Frame4: EXACT reference top-left aim pose: barrel horizontal to right, no muzzle flash. This is a subtle hand/arm-only movement; no turn, no squat, no leg movement, no bouncing or resizing of the helmet/head/body. Full figure height approximately 78% of each cell, centered, feet at90%. At least8% transparent gutters, no cross-cell artwork, fragments, detached pixels, ghost outlines or specks. Crisp solid pixel art matching reference, no antialiasing. No text, background, shadows, enemies, extra objects, muzzle flashes or gore."
+    }
+  ],
+  "changes": [
+    "Regenerated equip poses in the same stance and head angle as the shooting character.",
+    "Packed each frame using the connected figure's bounds to exclude neighboring-frame fragments.",
+    "Use aim frame 0 as the low-ready finish of equipping, followed by drawn rifle-raising frames.",
+    "Render the actual shooting frame 0 at the end of aiming and start of firing, giving a pixel-identical handoff."
+  ]
+}

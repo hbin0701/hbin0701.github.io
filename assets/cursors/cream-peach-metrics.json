@@ -1,0 +1,50 @@
+[
+  {
+    "name": "arrow-v3",
+    "kind": "cursor",
+    "hotspot": {
+      "x": 7,
+      "y": 2
+    },
+    "bounds": {
+      "left": 275,
+      "top": 246,
+      "right": 784,
+      "bottom": 1029,
+      "cx": 509.5
+    },
+    "asset": "assets/cursors/arrow-v3.png"
+  },
+  {
+    "name": "pointer-v3",
+    "kind": "cursor",
+    "hotspot": {
+      "x": 6,
+      "y": 2
+    },
+    "bounds": {
+      "left": 274,
+      "top": 234,
+      "right": 823,
+      "bottom": 1058,
+      "cx": 529
+    },
+    "asset": "assets/cursors/pointer-v3.png"
+  },
+  {
+    "name": "emote-v3",
+    "kind": "cursor",
+    "hotspot": {
+      "x": 7,
+      "y": 2
+    },
+    "bounds": {
+      "left": 357,
+      "top": 325,
+      "right": 800,
+      "bottom": 957,
+      "cx": 560
+    },
+    "asset": "assets/cursors/emote-v3.png"
+  }
+]

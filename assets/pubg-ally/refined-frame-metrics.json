@@ -1,0 +1,184 @@
+[
+  {
+    "name": "equip-v2",
+    "kind": "animation",
+    "frames": [
+      {
+        "source": {
+          "left": 170,
+          "right": 511,
+          "top": 38,
+          "bottom": 625,
+          "count": 150330,
+          "cx": 345
+        },
+        "scale": 0.3236994219653179,
+        "dx": -16,
+        "dy": 14,
+        "packed": {
+          "left": 39,
+          "right": 149,
+          "top": 26,
+          "bottom": 216,
+          "count": 15723,
+          "cx": 95.5
+        }
+      },
+      {
+        "source": {
+          "left": 98,
+          "right": 440,
+          "top": 110,
+          "bottom": 625,
+          "count": 125223,
+          "cx": 280.5
+        },
+        "scale": 0.3236994219653179,
+        "dx": 5,
+        "dy": 14,
+        "packed": {
+          "left": 37,
+          "right": 147,
+          "top": 50,
+          "bottom": 216,
+          "count": 13081,
+          "cx": 96
+        }
+      },
+      {
+        "source": {
+          "left": 172,
+          "right": 511,
+          "top": 67,
+          "bottom": 587,
+          "count": 127356,
+          "cx": 348
+        },
+        "scale": 0.3236994219653179,
+        "dx": -17,
+        "dy": 26,
+        "packed": {
+          "left": 39,
+          "right": 148,
+          "top": 48,
+          "bottom": 216,
+          "count": 13332,
+          "cx": 96
+        }
+      },
+      {
+        "source": {
+          "left": 90,
+          "right": 531,
+          "top": 68,
+          "bottom": 587,
+          "count": 133057,
+          "cx": 267
+        },
+        "scale": 0.3236994219653179,
+        "dx": 10,
+        "dy": 26,
+        "packed": {
+          "left": 39,
+          "right": 182,
+          "top": 48,
+          "bottom": 216,
+          "count": 13977,
+          "cx": 96.5
+        }
+      }
+    ],
+    "asset": "assets/pubg-ally/equip-v2.png"
+  },
+  {
+    "name": "aim-v2",
+    "kind": "animation",
+    "frames": [
+      {
+        "source": {
+          "left": 155,
+          "right": 560,
+          "top": 44,
+          "bottom": 618,
+          "count": 146527,
+          "cx": 377
+        },
+        "scale": 0.2926829268292683,
+        "dx": -14,
+        "dy": 35,
+        "packed": {
+          "left": 31,
+          "right": 150,
+          "top": 48,
+          "bottom": 216,
+          "count": 12545,
+          "cx": 96
+        }
+      },
+      {
+        "source": {
+          "left": 78,
+          "right": 529,
+          "top": 44,
+          "bottom": 618,
+          "count": 150609,
+          "cx": 261.5
+        },
+        "scale": 0.2926829268292683,
+        "dx": 19,
+        "dy": 35,
+        "packed": {
+          "left": 42,
+          "right": 174,
+          "top": 48,
+          "bottom": 216,
+          "count": 12893,
+          "cx": 95.5
+        }
+      },
+      {
+        "source": {
+          "left": 155,
+          "right": 618,
+          "top": 18,
+          "bottom": 586,
+          "count": 151190,
+          "cx": 339.5
+        },
+        "scale": 0.2926829268292683,
+        "dx": -3,
+        "dy": 44,
+        "packed": {
+          "left": 42,
+          "right": 178,
+          "top": 49,
+          "bottom": 216,
+          "count": 12983,
+          "cx": 96.5
+        }
+      },
+      {
+        "source": {
+          "left": 77,
+          "right": 536,
+          "top": 18,
+          "bottom": 586,
+          "count": 150165,
+          "cx": 262
+        },
+        "scale": 0.2926829268292683,
+        "dx": 19,
+        "dy": 44,
+        "packed": {
+          "left": 42,
+          "right": 176,
+          "top": 49,
+          "bottom": 216,
+          "count": 12869,
+          "cx": 95.5
+        }
+      }
+    ],
+    "asset": "assets/pubg-ally/aim-v2.png"
+  }
+]

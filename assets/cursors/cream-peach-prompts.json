@@ -1,0 +1,18 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "reference": "assets/cursors/arrow.png",
+  "assets": [
+    {
+      "file": "assets/cursors/arrow-v3.png",
+      "prompt": "Use case: precise-object-edit. Asset type: actual website mouse cursor. Edit target: the attached pixel arrow cursor. Preserve its clean classic arrow proportions, upper-left pointing tip, joined diagonal stem, and crisp pixel grid. Logical canvas 32 by 32 pixels, nearest-neighbor enlargement only. Actual transparent background. Keep the arrow small enough to leave padding, tip at logical 3,3. No antialiasing, texture, gradients, external shadow, text or scene. Keep the exact arrow silhouette and position. Change the white fill to warm cream (#faf7ee), the outline to dark forest green (#25352d), and the subtle inner lower-right shading to muted sage. No extra objects."
+    },
+    {
+      "file": "assets/cursors/pointer-v3.png",
+      "prompt": "Use case: precise-object-edit. Asset type: actual website mouse cursor. Edit target: the attached pixel arrow cursor. Preserve its clean classic arrow proportions, upper-left pointing tip, joined diagonal stem, and crisp pixel grid. Logical canvas 32 by 32 pixels, nearest-neighbor enlargement only. Actual transparent background. Keep the arrow small enough to leave padding, tip at logical 3,3. No antialiasing, texture, gradients, external shadow, text or scene. Keep the exact arrow silhouette and position. Change the white fill to warm peach (#edab8e), the outline to dark forest green (#25352d), and the subtle inner lower-right shading to a deeper peach. This is still an ARROW, never a hand. No extra objects."
+    },
+    {
+      "file": "assets/cursors/emote-v3.png",
+      "prompt": "Use case: precise-object-edit. Asset type: actual website mouse cursor. Edit target: the attached pixel arrow cursor. Preserve its clean classic arrow proportions, upper-left pointing tip, joined diagonal stem, and crisp pixel grid. Logical canvas 32 by 32 pixels, nearest-neighbor enlargement only. Actual transparent background. Keep the arrow small enough to leave padding, tip at logical 3,3. No antialiasing, texture, gradients, external shadow, text or scene. Keep the exact arrow silhouette and position. Change the white fill to warm peach (#edab8e), outline dark forest green (#25352d), and add ONE tiny four-point pixel star just to the arrow's upper-right side, separated by two transparent logical pixels. The arrow is the main cursor; the star is just a small accent, roughly 5x5 logical pixels. No hand."
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-mode="doc"><head><meta charset="utf-8"><script>try{if(localStorage.getItem('view')==='desktop'&&matchMedia('(min-width: 901px)').matches)document.documentElement.dataset.mode='desktop'}catch(e){}</script><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="google-site-verification" content="RbzwkvoL0jexA8TMZ7m0Lva6O-PvrL_XO9veOpXzc_E"><meta name="theme-color" content="#c9d8bd"><title>Hyeonbin Hwang — Research Desktop</title><meta name="description" content="Hyeonbin Hwang — Ph.D. student at KAIST STAI Lab. Language model reasoning, agentic AI, self-training, and reinforcement learning. Explore publications and experience on my research desktop."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Silkscreen&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css?v=20261013-page-view"><script src="script.js?v=20261013-page-view" defer></script><link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=20261013-character"></head>
+<html lang="en" data-mode="doc"><head><meta charset="utf-8"><script>try{if(localStorage.getItem('view')==='desktop'&&matchMedia('(min-width: 901px)').matches)document.documentElement.dataset.mode='desktop'}catch(e){}</script><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="google-site-verification" content="RbzwkvoL0jexA8TMZ7m0Lva6O-PvrL_XO9veOpXzc_E"><meta name="theme-color" content="#c9d8bd"><title>Hyeonbin Hwang — Research Desktop</title><meta name="description" content="Hyeonbin Hwang — Ph.D. student at KAIST STAI Lab. Language model reasoning, agentic AI, self-training, and reinforcement learning. Explore publications and experience on my research desktop."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Silkscreen&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css?v=20261015-pixel-cursor-small"><script src="script.js?v=20261014-imagegen-motion-v2" defer></script><script src="cursor.js?v=20261015-pixel-cursor-small" defer></script><script src="character.js?v=20261015-three-emotes" defer></script><script src="pubg-ally.js?v=20261015-running-entry-v2" defer></script><link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=20261013-character"></head>
 <body><svg xmlns="http://www.w3.org/2000/svg" class="icon-sprite" aria-hidden="true"><defs>
 <symbol id="icon-books" viewBox="0 0 32 32"><path fill="#26352e" d="M2 6h2V4h14v2h8v2h4v20h-2v2H12v-2H4v-2H2z"/><path fill="#dc967b" d="M4 8h8v18H4z"/><path fill="#f2bc94" d="M4 6h12v2H4z"/><path fill="#f8efda" d="M6 10h2v12H6zm8-2h10v2H14z"/><path fill="#6f9480" d="M14 10h8v18h-8z"/><path fill="#e9e6c9" d="M16 12h2v12h-2zm8-2h4v2h-4z"/><path fill="#c3b887" d="M24 12h4v16h-4z"/><path fill="#fff7e5" d="M26 14h2v10h-2z"/></symbol>
 <symbol id="icon-case" viewBox="0 0 32 32"><path fill="#26352e" d="M10 2h12v2h2v6h4v2h2v16h-2v2H4v-2H2V12h2v-2h4V4h2z"/><path fill="#a17a57" d="M4 12h24v14H4z"/><path fill="#bc9974" d="M4 12h24v8H4z"/><path fill="#26352e" d="M4 20h24v2H4zM12 6v4h8V6z"/><path fill="#f4d69b" d="M14 18h4v6h-4z"/><path fill="#705a44" d="M6 26h20v2H6z"/></symbol>
@@ -25,7 +25,13 @@
     <p class="about-hello">Hello World!<span class="hello-cursor" aria-hidden="true"></span></p>
     <h1><span class="name-lead">I’m</span> Hyeonbin Hwang</h1>
     <p class="about-role">Ph.D. Student @ KAIST</p>
-    </div><span class="about-figure doc-only" aria-hidden="true"><img src="assets/character.png" alt="" width="1254" height="1254"></span></div>
+    </div><span class="character-companion doc-only" aria-hidden="true">
+      <span class="character-hover-hint">Hover me! <span>↗</span></span>
+      <span class="about-figure" data-character>
+      <img class="character-fallback" src="assets/character.png" alt="" width="1254" height="1254">
+      <canvas class="character-canvas" width="128" height="192"></canvas>
+      </span>
+    </span></div>
     <p class="about-summary">My research focuses on language model reasoning and agentic AI. I develop general post-training methods driven by self-training and reinforcement learning, with the long-term goal of extracting richer learning signals from data.</p>
     <p class="about-summary">Outside of research, I enjoy playing jazz piano :D</p>
     <p class="about-summary">Feel free to <a class="text-link" href="#contact" data-open="contact">reach out</a>!</p>
@@ -47,13 +53,13 @@
     <div class="window-content"><div class="library-intro"><span class="library-total">12 papers</span></div>
     <div class="library-tools"><label class="search-box"><svg class="icon" aria-hidden="true" viewBox="0 0 32 32"><use href="#icon-search"></use></svg><span class="sr-only">Search publications</span><input type="search" id="paper-search" placeholder="Find a paper…" autocomplete="off"></label>
     <div class="library-filters"><label><span class="sr-only">Publication year</span><select id="paper-year"><option value="all">All years</option><option>2026</option><option>2025</option><option>2024</option><option>2022</option></select></label></div></div>
-    <p id="paper-results" class="sr-only" aria-live="polite"></p><div class="paper-list"><article class="paper" data-year="2026" data-selected="false">
+    <p id="paper-results" class="sr-only" aria-live="polite"></p><div class="paper-list"><article class="paper paper-pubg-ally" data-pubg-ally data-year="2026" data-selected="false">
       <div class="paper-heading"><svg class="paper-icon tone-0" aria-hidden="true" viewBox="0 0 32 32"><use href="#icon-books"></use></svg><div><p class="paper-year">2026</p>
       <h3 class="pub-title">PUBG Ally: A Conversational Embodied Agent as an AI Teammate</h3></div></div>
       <div class="pub-meta"><span class="authors">PUBG Ally Team: I Chen, Y Cho, S Chung, J Hong,
-                                                <span class="me">H Hwang</span>, ..., K Yoo</span><span class="venue"><span class="venue-preprint">Preprint</span></span></div><div class="pub-actions">
+                                                <span class="me">H Hwang</span>, ..., K Yoo</span><span class="venue"><span class="venue-preprint">Tech Report</span></span></div><div class="pub-actions">
 <a class="btn-link" data-icon="paper" href="https://arxiv.org/abs/2609.29837" rel="noopener" target="_blank">Paper</a>
-</div></article><article class="paper" data-year="2026" data-selected="true">
+</div><canvas class="pubg-ally-canvas" aria-hidden="true"></canvas></article><article class="paper" data-year="2026" data-selected="true">
       <div class="paper-heading"><svg class="paper-icon tone-1" aria-hidden="true" viewBox="0 0 32 32"><use href="#icon-books"></use></svg><div><p class="paper-year">2026</p>
       <h3 class="pub-title">Intrinsic Task Symmetry Drives Generalization in
                                             Algorithmic

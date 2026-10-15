@@ -1,0 +1,184 @@
+[
+  {
+    "name": "run-v2",
+    "kind": "animation",
+    "frames": [
+      {
+        "source": {
+          "left": 132,
+          "right": 550,
+          "top": 44,
+          "bottom": 627,
+          "count": 153375,
+          "cx": 324.5
+        },
+        "scale": 0.2881646655231561,
+        "dx": 2,
+        "dy": 35,
+        "packed": {
+          "left": 40,
+          "right": 160,
+          "top": 48,
+          "bottom": 216,
+          "count": 12762,
+          "cx": 95.5
+        }
+      },
+      {
+        "source": {
+          "left": 120,
+          "right": 477,
+          "top": 44,
+          "bottom": 627,
+          "count": 139131,
+          "cx": 314.5
+        },
+        "scale": 0.2881646655231561,
+        "dx": 5,
+        "dy": 35,
+        "packed": {
+          "left": 40,
+          "right": 142,
+          "top": 48,
+          "bottom": 216,
+          "count": 11553,
+          "cx": 75.5
+        }
+      },
+      {
+        "source": {
+          "left": 132,
+          "right": 547,
+          "top": 33,
+          "bottom": 608,
+          "count": 147240,
+          "cx": 326.5
+        },
+        "scale": 0.2881646655231561,
+        "dx": 2,
+        "dy": 41,
+        "packed": {
+          "left": 40,
+          "right": 160,
+          "top": 51,
+          "bottom": 216,
+          "count": 12229,
+          "cx": 96
+        }
+      },
+      {
+        "source": {
+          "left": 121,
+          "right": 473,
+          "top": 31,
+          "bottom": 608,
+          "count": 134727,
+          "cx": 315.5
+        },
+        "scale": 0.2881646655231561,
+        "dx": 5,
+        "dy": 41,
+        "packed": {
+          "left": 40,
+          "right": 141,
+          "top": 50,
+          "bottom": 216,
+          "count": 11174,
+          "cx": 75.5
+        }
+      }
+    ],
+    "asset": "assets/pubg-ally/run-v2.png"
+  },
+  {
+    "name": "friend-run-v2",
+    "kind": "animation",
+    "frames": [
+      {
+        "source": {
+          "left": 160,
+          "right": 559,
+          "top": 48,
+          "bottom": 627,
+          "count": 143716,
+          "cx": 343.5
+        },
+        "scale": 0.29015544041450775,
+        "dx": -4,
+        "dy": 34,
+        "packed": {
+          "left": 42,
+          "right": 158,
+          "top": 48,
+          "bottom": 216,
+          "count": 12122,
+          "cx": 96
+        }
+      },
+      {
+        "source": {
+          "left": 138,
+          "right": 483,
+          "top": 48,
+          "bottom": 627,
+          "count": 127035,
+          "cx": 269.5
+        },
+        "scale": 0.29015544041450775,
+        "dx": 18,
+        "dy": 34,
+        "packed": {
+          "left": 58,
+          "right": 158,
+          "top": 48,
+          "bottom": 216,
+          "count": 10690,
+          "cx": 95
+        }
+      },
+      {
+        "source": {
+          "left": 160,
+          "right": 558,
+          "top": 32,
+          "bottom": 607,
+          "count": 141598,
+          "cx": 344
+        },
+        "scale": 0.29015544041450775,
+        "dx": -4,
+        "dy": 40,
+        "packed": {
+          "left": 42,
+          "right": 158,
+          "top": 49,
+          "bottom": 216,
+          "count": 11924,
+          "cx": 96
+        }
+      },
+      {
+        "source": {
+          "left": 138,
+          "right": 484,
+          "top": 34,
+          "bottom": 605,
+          "count": 126037,
+          "cx": 269.5
+        },
+        "scale": 0.29015544041450775,
+        "dx": 18,
+        "dy": 40,
+        "packed": {
+          "left": 58,
+          "right": 158,
+          "top": 50,
+          "bottom": 216,
+          "count": 10623,
+          "cx": 95.5
+        }
+      }
+    ],
+    "asset": "assets/pubg-ally/friend-run-v2.png"
+  }
+]

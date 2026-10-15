@@ -1,0 +1,417 @@
+[
+  {
+    "name": "equip",
+    "kind": "animation",
+    "frames": [
+      {
+        "source": {
+          "left": 228,
+          "top": 12,
+          "right": 566,
+          "bottom": 627,
+          "cx": 409.5
+        },
+        "scale": 0.28717948717948716,
+        "dx": -22,
+        "dy": 36,
+        "packed": {
+          "left": 43,
+          "top": 39,
+          "right": 140,
+          "bottom": 216,
+          "cx": 95.5
+        }
+      },
+      {
+        "source": {
+          "left": 61,
+          "top": 98,
+          "right": 393,
+          "bottom": 627,
+          "cx": 242.5
+        },
+        "scale": 0.28717948717948716,
+        "dx": 26,
+        "dy": 36,
+        "packed": {
+          "left": 44,
+          "top": 64,
+          "right": 139,
+          "bottom": 216,
+          "cx": 95.5
+        }
+      },
+      {
+        "source": {
+          "left": 221,
+          "top": 0,
+          "right": 564,
+          "bottom": 585,
+          "cx": 410
+        },
+        "scale": 0.28717948717948716,
+        "dx": -22,
+        "dy": 48,
+        "packed": {
+          "left": 41,
+          "top": 48,
+          "right": 140,
+          "bottom": 216,
+          "cx": 96
+        }
+      },
+      {
+        "source": {
+          "left": 97,
+          "top": 0,
+          "right": 448,
+          "bottom": 585,
+          "cx": 244
+        },
+        "scale": 0.28717948717948716,
+        "dx": 26,
+        "dy": 48,
+        "packed": {
+          "left": 54,
+          "top": 48,
+          "right": 155,
+          "bottom": 216,
+          "cx": 96
+        }
+      }
+    ],
+    "asset": "assets/pubg-ally/equip.png"
+  },
+  {
+    "name": "shoot",
+    "kind": "animation",
+    "frames": [
+      {
+        "source": {
+          "left": 156,
+          "top": 44,
+          "right": 608,
+          "bottom": 616,
+          "cx": 339
+        },
+        "scale": 0.2937062937062937,
+        "dx": -4,
+        "dy": 35,
+        "packed": {
+          "left": 42,
+          "top": 48,
+          "right": 174,
+          "bottom": 216,
+          "cx": 95.5
+        }
+      },
+      {
+        "source": {
+          "left": 71,
+          "top": 44,
+          "right": 563,
+          "bottom": 616,
+          "cx": 260.5
+        },
+        "scale": 0.2937062937062937,
+        "dx": 19,
+        "dy": 35,
+        "packed": {
+          "left": 40,
+          "top": 48,
+          "right": 184,
+          "bottom": 216,
+          "cx": 95.5
+        }
+      },
+      {
+        "source": {
+          "left": 156,
+          "top": 13,
+          "right": 608,
+          "bottom": 583,
+          "cx": 339
+        },
+        "scale": 0.2937062937062937,
+        "dx": -4,
+        "dy": 45,
+        "packed": {
+          "left": 42,
+          "top": 49,
+          "right": 174,
+          "bottom": 216,
+          "cx": 95.5
+        }
+      },
+      {
+        "source": {
+          "left": 71,
+          "top": 13,
+          "right": 570,
+          "bottom": 583,
+          "cx": 260.5
+        },
+        "scale": 0.2937062937062937,
+        "dx": 19,
+        "dy": 45,
+        "packed": {
+          "left": 40,
+          "top": 49,
+          "right": 186,
+          "bottom": 216,
+          "cx": 95.5
+        }
+      }
+    ],
+    "asset": "assets/pubg-ally/shoot.png"
+  },
+  {
+    "name": "run",
+    "kind": "animation",
+    "frames": [
+      {
+        "source": {
+          "left": 133,
+          "top": 45,
+          "right": 549,
+          "bottom": 627,
+          "cx": 324.5
+        },
+        "scale": 0.28865979381443296,
+        "dx": 2,
+        "dy": 35,
+        "packed": {
+          "left": 40,
+          "top": 48,
+          "right": 160,
+          "bottom": 216,
+          "cx": 95.5
+        }
+      },
+      {
+        "source": {
+          "left": 121,
+          "top": 45,
+          "right": 476,
+          "bottom": 627,
+          "cx": 314.5
+        },
+        "scale": 0.28865979381443296,
+        "dx": 5,
+        "dy": 35,
+        "packed": {
+          "left": 40,
+          "top": 48,
+          "right": 142,
+          "bottom": 216,
+          "cx": 75.5
+        }
+      },
+      {
+        "source": {
+          "left": 133,
+          "top": 0,
+          "right": 546,
+          "bottom": 608,
+          "cx": 326.5
+        },
+        "scale": 0.28865979381443296,
+        "dx": 2,
+        "dy": 41,
+        "packed": {
+          "left": 40,
+          "top": 41,
+          "right": 160,
+          "bottom": 216,
+          "cx": 96
+        }
+      },
+      {
+        "source": {
+          "left": 122,
+          "top": 0,
+          "right": 472,
+          "bottom": 607,
+          "cx": 317.5
+        },
+        "scale": 0.28865979381443296,
+        "dx": 4,
+        "dy": 41,
+        "packed": {
+          "left": 39,
+          "top": 41,
+          "right": 140,
+          "bottom": 216,
+          "cx": 95
+        }
+      }
+    ],
+    "asset": "assets/pubg-ally/run.png"
+  },
+  {
+    "name": "friend-shoot",
+    "kind": "animation",
+    "frames": [
+      {
+        "source": {
+          "left": 127,
+          "top": 44,
+          "right": 521,
+          "bottom": 610,
+          "cx": 371
+        },
+        "scale": 0.2968197879858657,
+        "dx": -14,
+        "dy": 35,
+        "packed": {
+          "left": 24,
+          "top": 48,
+          "right": 141,
+          "bottom": 216,
+          "cx": 96
+        }
+      },
+      {
+        "source": {
+          "left": 36,
+          "top": 44,
+          "right": 521,
+          "bottom": 610,
+          "cx": 371
+        },
+        "scale": 0.2968197879858657,
+        "dx": -14,
+        "dy": 35,
+        "packed": {
+          "left": 0,
+          "top": 48,
+          "right": 141,
+          "bottom": 216,
+          "cx": 96
+        }
+      },
+      {
+        "source": {
+          "left": 127,
+          "top": 38,
+          "right": 521,
+          "bottom": 603,
+          "cx": 371
+        },
+        "scale": 0.2968197879858657,
+        "dx": -14,
+        "dy": 37,
+        "packed": {
+          "left": 24,
+          "top": 48,
+          "right": 141,
+          "bottom": 216,
+          "cx": 96
+        }
+      },
+      {
+        "source": {
+          "left": 28,
+          "top": 37,
+          "right": 521,
+          "bottom": 603,
+          "cx": 371
+        },
+        "scale": 0.2968197879858657,
+        "dx": -14,
+        "dy": 37,
+        "packed": {
+          "left": 0,
+          "top": 48,
+          "right": 141,
+          "bottom": 216,
+          "cx": 96
+        }
+      }
+    ],
+    "asset": "assets/pubg-ally/friend-shoot.png"
+  },
+  {
+    "name": "friend-run",
+    "kind": "animation",
+    "frames": [
+      {
+        "source": {
+          "left": 161,
+          "top": 49,
+          "right": 558,
+          "bottom": 627,
+          "cx": 343.5
+        },
+        "scale": 0.2906574394463668,
+        "dx": -4,
+        "dy": 34,
+        "packed": {
+          "left": 43,
+          "top": 48,
+          "right": 158,
+          "bottom": 216,
+          "cx": 96
+        }
+      },
+      {
+        "source": {
+          "left": 139,
+          "top": 49,
+          "right": 483,
+          "bottom": 627,
+          "cx": 269.5
+        },
+        "scale": 0.2906574394463668,
+        "dx": 18,
+        "dy": 34,
+        "packed": {
+          "left": 58,
+          "top": 48,
+          "right": 158,
+          "bottom": 216,
+          "cx": 95
+        }
+      },
+      {
+        "source": {
+          "left": 161,
+          "top": 0,
+          "right": 558,
+          "bottom": 606,
+          "cx": 344
+        },
+        "scale": 0.2906574394463668,
+        "dx": -4,
+        "dy": 40,
+        "packed": {
+          "left": 43,
+          "top": 50,
+          "right": 158,
+          "bottom": 216,
+          "cx": 96
+        }
+      },
+      {
+        "source": {
+          "left": 139,
+          "top": 0,
+          "right": 483,
+          "bottom": 604,
+          "cx": 269.5
+        },
+        "scale": 0.2906574394463668,
+        "dx": 18,
+        "dy": 41,
+        "packed": {
+          "left": 58,
+          "top": 51,
+          "right": 158,
+          "bottom": 216,
+          "cx": 96
+        }
+      }
+    ],
+    "asset": "assets/pubg-ally/friend-run.png"
+  }
+]
