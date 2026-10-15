@@ -1,6 +1,6 @@
 # Character animations and cursors
 
-The character has three emotes: hover wave, curious head tilt, and two thumbs up, plus automatic blinking. Breathing remains off. Hovering the character triggers a random emote, avoiding the current and previous action. Wave is included in the hover choices, but never in the automatic idle sequence. A subtle “Hover me!” hint sits beside the character on devices with a mouse. The hint is hidden for touch and reduced-motion preferences.
+The character has three emotes: hover wave, curious head tilt, and two thumbs up, plus automatic blinking. Breathing remains off. Hovering the character always triggers a friendly wave. Wave never plays in the automatic idle sequence. A subtle “Hover me!” hint sits beside the character on devices with a mouse. The hint is hidden for touch and reduced-motion preferences.
 
 Blinks last 200 ms and recur every 2–3.5 seconds while resting. Head tilt and two thumbs up play from a shuffled sequence with a new gesture starting approximately every five seconds, including animation time; each returns to the original neutral pose. Hover emotes interrupt an idle gesture and restart the five-second rhythm. Movement pauses offscreen, in hidden tabs, in desktop view, and for reduced-motion preferences. Desktop icon images remain still.
 
@@ -10,7 +10,7 @@ The built-in imagegen tool generated nine new action sheets and three cursor ima
 
 Final assets are in `assets/character/*.png` and `assets/cursors/*.png`. Exact prompts and refinement notes are saved in `assets/character/generation-prompts.json`; measured frame alignment is recorded in `assets/character/frame-metrics.json`. Original assets have been preserved.
 
-Open `/character-preview.html` on the local server to review the three emotes and blink side by side. This page uses the same renderer as the main website and includes a pause button. The gallery demonstrates waves automatically for review; the main website triggers random emotes on hover.
+Open `/character-preview.html` on the local server to review the three emotes and blink side by side. This page uses the same renderer as the main website and includes a pause button. The gallery demonstrates waves automatically for review; the main website always waves on hover.
 
 The website uses a native 24px pixel arrow in ivory, changing to gold with a three-frame sparkle over links, buttons, and the character. Cursor artwork is in `assets/cursors/game/`; `cursor.js` animates only during hover and stops for reduced motion or hidden tabs. Text inputs retain text cursors and desktop window bars retain grab/grabbing cursors. Older cursor artwork is preserved but unused.
 

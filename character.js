@@ -141,10 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     figure.addEventListener('pointerenter', event => {
       if (event.pointerType === 'touch' || !canAnimate()) return;
-      const choices = ['wave', ...idleActions].filter(name =>
-        images.has(name) && name !== currentAction && name !== lastAction);
-      const name = choices[Math.floor(Math.random() * choices.length)];
-      if (name) play(name, true);
+      play('wave', true);
     });
     // The preview page and browser QA use the same renderer as the website.
     figure.addEventListener('character:play', event => play(event.detail, true));
